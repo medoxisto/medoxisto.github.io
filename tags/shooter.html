@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shooter Games - Free Online | Free Games</title>
+<meta name="description" content="Play free shooter games online. Browse all games tagged with shooter. No downloads required!">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://medoxisto.github.io/tags/shooter.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shooter Games - Free Online | Free Games">
+<meta property="og:description" content="Play free shooter games online. Browse all games tagged with shooter. No downloads required!">
+<meta property="og:url" content="https://medoxisto.github.io/tags/shooter.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shooter Games - Free Online | Free Games">
+<meta name="twitter:description" content="Play free shooter games online. Browse all games tagged with shooter. No downloads required!">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+    --bg: #0c0d14;
+    --bg2: #1a1b28;
+    --card: rgba(255, 255, 255, .07);
+    --card-hover: #252636;
+    --accent: #6842ff;
+    --accent2: #a48eff;
+    --text: #f9faff;
+    --muted: #9ca3af;
+    --border: rgba(255, 255, 255, .08);
+    --radius: 10px;
+    --shadow: 0 3px 3px -2px rgba(0, 0, 0, .2);
+    --success: #10b981;
+    --warning: #f59e0b;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Nunito', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--accent2); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--accent); }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Skip Link */
+.skip { position: absolute; top: -40px; left: 0; background: var(--accent); color: #fff; padding: 8px 16px; z-index: 9999; border-radius: 30px; }
+.skip:focus { top: 0; }
+
+/* Container */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+header { background: var(--bg2); box-shadow: var(--shadow); padding: 12px 0; position: sticky; top: 0; z-index: 100; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.logo { font-size: 24px; font-weight: 800; color: var(--text); display: flex; align-items: center; gap: 10px; }
+.logo span { color: var(--accent); }
+
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav a { color: var(--muted); font-size: 14px; font-weight: 600; padding: 10px 16px; border-radius: var(--radius); transition: all .2s; }
+nav a:hover { color: var(--text); background: var(--card); }
+
+/* Search */
+.search { display: flex; background: var(--card); border-radius: 30px; overflow: hidden; border: 1px solid var(--border); }
+.search input { background: none; border: none; padding: 12px 20px; color: var(--text); font-size: 14px; width: 200px; }
+.search input::placeholder { color: var(--muted); }
+.search input:focus { outline: none; }
+.search button { background: var(--accent); border: none; color: #fff; padding: 12px 24px; cursor: pointer; font-weight: 700; border-radius: 30px; margin: 4px; }
+
+/* Main */
+main { min-height: 60vh; padding: 32px 0; }
+
+/* Hero */
+.hero { text-align: center; padding: 60px 24px; background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%); }
+.hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 800; margin-bottom: 16px; }
+.hero h1 span { color: var(--accent); }
+.hero p { color: var(--muted); font-size: 18px; max-width: 600px; margin: 0 auto 24px; }
+
+/* Sections */
+.section { margin: 40px 0; }
+.section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.section-title { font-size: 22px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.view-all { color: var(--accent2); font-size: 13px; font-weight: 700; }
+
+/* Grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.grid-sm { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+
+/* Game Card */
+.card { background: var(--card); border-radius: var(--radius); overflow: hidden; transition: all .25s ease; border: 1px solid transparent; display: block; position: relative; }
+.card:hover { transform: scale(1.03); box-shadow: 0 12px 40px rgba(104, 66, 255, .25); background: var(--card-hover); border-color: var(--accent); }
+.card-img { aspect-ratio: 16/9; overflow: hidden; position: relative; background: var(--bg2); }
+.card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.card:hover .card-img img { transform: scale(1.05); }
+.card-info { padding: 14px; }
+.card-info h3 { font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0 0 4px; color: var(--text); }
+.card-info .cat { font-size: 12px; color: var(--muted); text-transform: capitalize; }
+
+/* Badges */
+.badge { position: absolute; top: 10px; left: 10px; padding: 5px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.badge-new { background: var(--accent); color: #fff; }
+.badge-hot { background: #f59e0b; color: #000; }
+.badge-mobile { background: var(--success); color: #fff; }
+
+/* Favorite Button */
+.fav-btn { position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,.5); border: none; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: all .2s; }
+.fav-btn:hover { background: var(--accent); transform: scale(1.1); }
+.fav-btn.active { background: #ec4899; }
+
+/* Breadcrumbs */
+.breadcrumbs { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); margin-bottom: 20px; flex-wrap: wrap; }
+.breadcrumbs a { color: var(--accent2); }
+.breadcrumbs span { opacity: 0.5; }
+
+/* Game Page Layout */
+.game-layout { display: grid; grid-template-columns: 1fr 300px; gap: 24px; }
+
+
+/* Game Box */
+.game-box { background: var(--bg2); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+.game-header { padding: 24px; border-bottom: 1px solid var(--border); }
+.game-header h1 { font-size: clamp(22px, 4vw, 32px); font-weight: 800; margin-bottom: 10px; }
+.game-meta { display: flex; flex-wrap: wrap; gap: 16px; color: var(--muted); font-size: 14px; }
+.game-frame { background: #000; aspect-ratio: 16/9; }
+.game-frame iframe { width: 100%; height: 100%; border: none; }
+.game-actions { display: flex; justify-content: center; gap: 16px; padding: 20px; background: var(--bg); flex-wrap: wrap; }
+.game-actions button { background: var(--bg2); border: 1px solid var(--border); color: var(--text); padding: 14px 28px; border-radius: 30px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: inherit; transition: all .2s; }
+.game-actions button:hover { background: var(--accent); border-color: var(--accent); }
+.game-actions button.primary { background: var(--accent); border: none; }
+
+/* Game Sidebar */
+.game-sidebar { display: flex; flex-direction: column; gap: 20px; }
+.info-box { background: var(--bg2); border-radius: var(--radius); border: 1px solid var(--border); padding: 20px; }
+.info-box h3 { font-size: 16px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.info-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.info-item:last-child { border-bottom: none; }
+.info-label { color: var(--muted); }
+.info-value { font-weight: 600; }
+
+/* Tags */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.tag { background: var(--card); border: 1px solid var(--border); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; transition: all .2s; }
+.tag:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* How to Play */
+.how-to-play { background: var(--card); border-radius: var(--radius); padding: 16px; margin-top: 12px; }
+.how-to-play p { font-size: 14px; color: var(--muted); }
+
+/* Share Buttons */
+.share-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.share-btn { width: 40px; height: 40px; border-radius: 50%; border: none; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: all .2s; }
+.share-btn:hover { transform: scale(1.1); }
+.share-btn.twitter { background: #1da1f2; color: #fff; }
+.share-btn.facebook { background: #4267b2; color: #fff; }
+.share-btn.whatsapp { background: #25d366; color: #fff; }
+.share-btn.copy { background: var(--card); color: var(--text); border: 1px solid var(--border); }
+
+/* Description */
+.game-desc { padding: 24px; color: var(--muted); line-height: 1.8; }
+
+/* Related Games */
+.related-games { margin-top: 40px; }
+
+/* Category Cards */
+.cats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+.cat-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; text-align: center; transition: all .2s; }
+.cat-card:hover { border-color: var(--accent); transform: translateY(-4px); background: var(--card-hover); }
+.cat-card h3 { font-size: 15px; font-weight: 700; margin: 0 0 4px; }
+.cat-card span { font-size: 13px; color: var(--muted); }
+
+/* Footer */
+footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 40px 0; text-align: center; margin-top: 60px; }
+footer p { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+.footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+.footer-links a { color: var(--accent2); font-size: 14px; }
+
+/* Walkthrough */
+.walkthrough-section { margin-top: 24px; background: var(--bg2); border-radius: var(--radius); border: 1px solid var(--border); padding: 20px; }
+.walkthrough-section h2 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+
+/* Search Results */
+#search-results { display: none; }
+#search-results.active { display: block; }
+#search-input { width: 100%; padding: 16px 24px; background: var(--card); border: 1px solid var(--border); border-radius: 30px; color: var(--text); font-size: 16px; margin-bottom: 24px; }
+#search-input:focus { outline: none; border-color: var(--accent); }
+
+/* Recently Played / Favorites */
+#recently-played, #favorites { display: none; }
+#recently-played.has-games, #favorites.has-games { display: block; }
+
+/* Responsive */
+
+
+
+/* Cookie Consent */
+.cookie-popup { position: fixed; bottom: 20px; left: 20px; right: 20px; max-width: 400px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; z-index: 9999; box-shadow: 0 10px 40px rgba(0,0,0,.5); display: none; }
+.cookie-popup.show { display: block; }
+.cookie-popup p { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
+.cookie-popup .btns { display: flex; gap: 10px; }
+.cookie-popup button { padding: 10px 20px; border-radius: 20px; border: none; cursor: pointer; font-weight: 600; font-size: 14px; }
+.cookie-popup .accept { background: var(--accent); color: #fff; }
+.cookie-popup .decline { background: var(--card); color: var(--text); }
+
+/* ========== MOBILE OPTIMIZATION ========== */
+@media (max-width: 768px) {
+    /* Compact Header */
+    header { padding: 8px 0; }
+    .header-inner { gap: 10px; }
+    .logo { font-size: 18px; gap: 6px; }
+    .logo span { font-size: 16px; }
+    nav { display: none; }
+    .search { display: none; }
+    
+    /* Compact Container */
+    .container { padding: 0 12px; }
+    
+    /* Hero Section */
+    .hero { padding: 20px 12px; }
+    .hero h1 { font-size: 22px; margin-bottom: 8px; }
+    .hero p { font-size: 14px; margin-bottom: 16px; display: none; }
+    #search-input { padding: 12px 16px; font-size: 14px; margin-bottom: 16px; }
+    
+    /* Section Headers */
+    .section { margin: 20px 0; }
+    .section-header { margin-bottom: 12px; }
+    .section-title { font-size: 16px; }
+    
+    /* 2-Column Game Grid */
+    .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+    
+    /* Compact Game Cards */
+    .card { border-radius: 8px; }
+    .card-img { aspect-ratio: 16/10; border-radius: 8px 8px 0 0; }
+    .card-info { padding: 8px 10px; }
+    .card-info h3 { font-size: 12px; margin-bottom: 2px; }
+    .card-info .cat { font-size: 10px; }
+    .badge { padding: 3px 6px; font-size: 9px; top: 6px; left: 6px; }
+    .fav-btn { width: 28px; height: 28px; font-size: 14px; top: 6px; right: 6px; }
+    
+    /* Category Grid */
+    .cats-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 8px;
+    }
+    .cat-card { padding: 12px 8px; }
+    .cat-card h3 { font-size: 12px; }
+    .cat-card span { font-size: 10px; }
+    
+    /* Footer */
+    footer { padding: 24px 0; margin-top: 32px; }
+    footer p { font-size: 11px; }
+    .footer-links { gap: 12px; }
+    .footer-links a { font-size: 11px; }
+    
+    /* Cookie popup */
+    .cookie-popup { bottom: 10px; left: 10px; right: 10px; padding: 14px; }
+    .cookie-popup p { font-size: 12px; margin-bottom: 12px; }
+    .cookie-popup button { padding: 8px 14px; font-size: 12px; }
+}
+
+/* ========== GAME PAGE MOBILE ========== */
+@media (max-width: 768px) {
+    /* Layout */
+    .game-layout { display: flex; flex-direction: column; gap: 16px; }
+    .game-main { order: 1 !important; }
+    .game-sidebar { order: 99 !important; }
+    
+    /* Hide breadcrumbs on mobile */
+    .breadcrumbs { display: none; }
+    
+    /* Game Header */
+    .game-box { border-radius: 8px; }
+    .game-header { padding: 12px; }
+    .game-header h1 { font-size: 18px; margin-bottom: 6px; }
+    .game-meta { font-size: 12px; gap: 8px; }
+    .game-meta span { padding: 4px 0; }
+    
+    /* Game Frame - Full width, good height */
+    .game-frame { 
+        aspect-ratio: 16/10; 
+        min-height: 220px;
+        border-radius: 0;
+    }
+    
+    /* Game Actions - Horizontal scroll */
+    .game-actions { 
+        padding: 10px; 
+        gap: 8px; 
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .game-actions button { 
+        padding: 10px 14px; 
+        font-size: 13px; 
+        min-width: auto;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    /* Description */
+    .game-desc { padding: 14px; font-size: 13px; line-height: 1.6; }
+    .game-desc h2 { font-size: 15px; margin-bottom: 8px; }
+    
+    /* Sidebar Info Boxes */
+    .game-sidebar { gap: 12px; }
+    .info-box { padding: 14px; border-radius: 8px; }
+    .info-box h3 { font-size: 14px; margin-bottom: 10px; }
+    .info-item { padding: 8px 0; font-size: 12px; }
+    .info-label { color: var(--muted); }
+    
+    /* Tags */
+    .tags { gap: 6px; }
+    .tag { padding: 4px 10px; font-size: 11px; }
+    
+    /* How to Play */
+    .how-to-play { padding: 12px; }
+    .how-to-play p { font-size: 12px; }
+    
+    /* Share Buttons */
+    .share-btns { gap: 8px; }
+    .share-btn { width: 36px; height: 36px; font-size: 14px; }
+}
+
+/* Extra small phones */
+@media (max-width: 380px) {
+    .grid { gap: 8px; }
+    .card-info { padding: 6px 8px; }
+    .card-info h3 { font-size: 11px; }
+    .game-header h1 { font-size: 16px; }
+    .game-actions button { padding: 8px 12px; font-size: 12px; }
+}
+
+</style>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="container">
+<div class="header-inner">
+<a href="../" class="logo" aria-label="Home">🎮 <span>Free Games</span></a>
+<nav aria-label="Main">
+<a href="../">Home</a>
+<a href="../categories/action.html">Action</a>
+<a href="../categories/puzzle.html">Puzzle</a>
+<a href="../categories/racing.html">Racing</a>
+<a href="../categories/sports.html">Sports</a>
+</nav>
+<form class="search" action="../" method="get" role="search">
+<input type="search" id="q" name="q" placeholder="Search games..." aria-label="Search games">
+<button type="submit">Go</button>
+</form>
+</div>
+</div>
+</header>
+
+<main id="main">
+<div class="container">
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<a href="../">Home</a>
+<span>›</span>
+<span>Tag: Shooter</span>
+</nav>
+
+<section class="section">
+<div class="section-header">
+<h1 class="section-title">🏷️ Shooter Games</h1>
+<span style="color:var(--muted)">7 games</span>
+</div>
+<div class="grid"><a href="../games/christmas-bubble-shooter-game.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/aumacmqvzwt6w1r2whz2ukrlhfosxwss/512x384.jpg" alt="Christmas Bubble Shooter Game" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Christmas Bubble Shooter Game</h3><p class="cat">Hypercasual</p></div>
+</a><a href="../games/gun-upgrade-rush.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/ibdi5nxvuhzxk5ltd72ktnc5clcm7ho8/512x384.jpg" alt="Gun Upgrade Rush" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Gun Upgrade Rush</h3><p class="cat">Arcade</p></div>
+</a><a href="../games/sniper-shooting-offline-games.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/ndmuxgujjnz4m51i9ylggukct53rhd8q/512x384.jpg" alt="Sniper Shooting Offline Games" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Sniper Shooting Offline Games</h3><p class="cat">Shooting</p></div>
+</a><a href="../games/urban-sniper-2.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/nkiklh747mm8bjel7kfxh0eazcy2ka41/512x384.jpg" alt="Urban Sniper 2" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Urban Sniper 2</h3><p class="cat">Shooting</p></div>
+</a><a href="../games/brainrot-shooter.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/l8xgrcjf37q82eol0yfzm5bc78sexlw5/512x384.jpg" alt="Brainrot Shooter" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Brainrot Shooter</h3><p class="cat">Shooting</p></div>
+</a><a href="../games/cosmic-defender.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/hpps4rzujsi2jzxw7thbkypm3sb4mq0q/512x384.jpg" alt="Cosmic Defender" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Cosmic Defender</h3><p class="cat">Shooting</p></div>
+</a><a href="../games/gang-blast.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/48v0gscii4bf868ymoyqf6oyo0tsd2ou/512x384.jpg" alt="Gang Blast" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Gang Blast</h3><p class="cat">Shooting</p></div>
+</a></div>
+</section>
+</div>
+</main>
+
+<footer>
+<div class="container">
+<p>© 2024 Free Online Games. Play free browser games instantly - no downloads required!</p>
+<div class="footer-links">
+<a href="../privacy.html">Privacy Policy</a>
+<a href="../terms.html">Terms of Service</a>
+<a href="../contact.html">Contact</a>
+<a href="../cookies.html">Cookie Policy</a>
+</div>
+</div>
+</footer>
+<div class="cookie-popup">
+<p>🍪 We use cookies to enhance your gaming experience and analyze traffic. By clicking "Accept", you consent to our use of cookies.</p>
+<div class="btns">
+<button class="accept" onclick="acceptCookies()">Accept</button>
+<button class="decline" onclick="declineCookies()">Decline</button>
+</div>
+</div>
+<script>
+// Recently Played
+function getRecentlyPlayed() {
+    return JSON.parse(localStorage.getItem('recentlyPlayed') || '[]');
+}
+function addRecentlyPlayed(game) {
+    let recent = getRecentlyPlayed().filter(g => g.slug !== game.slug);
+    recent.unshift(game);
+    localStorage.setItem('recentlyPlayed', JSON.stringify(recent.slice(0, 10)));
+}
+
+// Favorites
+function getFavorites() {
+    return JSON.parse(localStorage.getItem('favorites') || '[]');
+}
+function toggleFavorite(game) {
+    let favs = getFavorites();
+    const idx = favs.findIndex(g => g.slug === game.slug);
+    if (idx > -1) {
+        favs.splice(idx, 1);
+    } else {
+        favs.push(game);
+    }
+    localStorage.setItem('favorites', JSON.stringify(favs));
+    return idx === -1;
+}
+function isFavorite(slug) {
+    return getFavorites().some(g => g.slug === slug);
+}
+
+// Share
+function shareGame(platform, title, url) {
+    const text = 'Play ' + title + ' for free!';
+    const urls = {
+        twitter: 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url),
+        facebook: 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url),
+        whatsapp: 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url)
+    };
+    if (platform === 'copy') {
+        navigator.clipboard.writeText(url);
+        alert('Link copied!');
+    } else {
+        window.open(urls[platform], '_blank', 'width=600,height=400');
+    }
+}
+
+// Cookie Consent
+if (!localStorage.getItem('cookieConsent')) {
+    document.addEventListener('DOMContentLoaded', function() {
+        const popup = document.querySelector('.cookie-popup');
+        if (popup) popup.classList.add('show');
+    });
+}
+function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    document.querySelector('.cookie-popup').classList.remove('show');
+}
+function declineCookies() {
+    localStorage.setItem('cookieConsent', 'declined');
+    document.querySelector('.cookie-popup').classList.remove('show');
+}
+
+// Search (homepage)
+function initSearch() {
+    const input = document.getElementById('search-input');
+    const results = document.getElementById('search-results');
+    const grid = document.getElementById('search-grid');
+    if (!input || !window.GAMES_INDEX) return;
+    
+    input.addEventListener('input', function() {
+        const q = this.value.toLowerCase().trim();
+        if (q.length < 2) {
+            results.classList.remove('active');
+            return;
+        }
+        const matches = window.GAMES_INDEX.filter(g => 
+            g.title.toLowerCase().includes(q) || 
+            g.category.toLowerCase().includes(q) ||
+            (g.tags && g.tags.some(t => t.toLowerCase().includes(q)))
+        ).slice(0, 20);
+        
+        if (matches.length) {
+            grid.innerHTML = matches.map(g => `
+                <a href="games/${g.slug}.html" class="card">
+                    <div class="card-img"><img src="${g.thumb}" alt="${g.title}" loading="lazy"></div>
+                    <div class="card-info"><h3>${g.title}</h3><p class="cat">${g.category}</p></div>
+                </a>
+            `).join('');
+            results.classList.add('active');
+        } else {
+            results.classList.remove('active');
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded', initSearch);
+</script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact Us - Free Online Games</title>
+    <meta name="description"
+        content="Contact Free Online Games. Get in touch with us for questions, feedback, or support.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://medoxisto.github.io/contact.html">
+    <style>
+        :root {
+            --bg: #0d0d1a;
+            --bg2: #141428;
+            --card: #1a1a35;
+            --accent: #8b5cf6;
+            --accent2: #ec4899;
+            --text: #f1f5f9;
+            --muted: #94a3b8;
+            --border: rgba(139, 92, 246, .15);
+            --radius: 14px
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 16px
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none
+        }
+
+        a:hover {
+            color: var(--accent2)
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        header {
+            background: var(--bg2);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            gap: 16px
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+
+        main {
+            padding: 48px 0
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+            color: var(--text)
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 16px
+        }
+
+        .back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            font-weight: 600
+        }
+
+        .back:hover {
+            background: var(--accent);
+            border-color: var(--accent)
+        }
+
+        .contact-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin: 24px 0
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0
+        }
+
+        .contact-info h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 14px
+        }
+
+        .contact-info a {
+            font-size: 16px;
+            font-weight: 600
+        }
+
+        .faq {
+            margin-top: 48px
+        }
+
+        .faq-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 12px
+        }
+
+        .faq-item h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text)
+        }
+
+        .faq-item p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--muted)
+        }
+
+        footer {
+            background: var(--bg2);
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            text-align: center;
+            margin-top: 48px
+        }
+
+        footer p {
+            color: var(--muted);
+            font-size: 13px
+        }
+    
+/* ========== MOBILE OPTIMIZATION ========== */
+@media (max-width: 768px) {
+    /* Compact Header */
+    header { padding: 8px 0; }
+    .header-inner { gap: 10px; }
+    .logo { font-size: 18px; gap: 6px; }
+    .logo span { font-size: 16px; }
+    nav { display: none; }
+    .search { display: none; }
+    
+    /* Compact Container */
+    .container { padding: 0 12px; }
+    
+    /* Hero Section */
+    .hero { padding: 20px 12px; }
+    .hero h1 { font-size: 22px; margin-bottom: 8px; }
+    .hero p { font-size: 14px; margin-bottom: 16px; display: none; }
+    #search-input { padding: 12px 16px; font-size: 14px; margin-bottom: 16px; }
+    
+    /* Section Headers */
+    .section { margin: 20px 0; }
+    .section-header { margin-bottom: 12px; }
+    .section-title { font-size: 16px; }
+    
+    /* 2-Column Game Grid */
+    .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+    
+    /* Compact Game Cards */
+    .card { border-radius: 8px; }
+    .card-img { aspect-ratio: 16/10; border-radius: 8px 8px 0 0; }
+    .card-info { padding: 8px 10px; }
+    .card-info h3 { font-size: 12px; margin-bottom: 2px; }
+    .card-info .cat { font-size: 10px; }
+    .badge { padding: 3px 6px; font-size: 9px; top: 6px; left: 6px; }
+    .fav-btn { width: 28px; height: 28px; font-size: 14px; top: 6px; right: 6px; }
+    
+    /* Category Grid */
+    .cats-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 8px;
+    }
+    .cat-card { padding: 12px 8px; }
+    .cat-card h3 { font-size: 12px; }
+    .cat-card span { font-size: 10px; }
+    
+    /* Footer */
+    footer { padding: 24px 0; margin-top: 32px; }
+    footer p { font-size: 11px; }
+    .footer-links { gap: 12px; }
+    .footer-links a { font-size: 11px; }
+    
+    /* Cookie popup */
+    .cookie-popup { bottom: 10px; left: 10px; right: 10px; padding: 14px; }
+    .cookie-popup p { font-size: 12px; margin-bottom: 12px; }
+    .cookie-popup button { padding: 8px 14px; font-size: 12px; }
+}
+
+/* ========== GAME PAGE MOBILE ========== */
+@media (max-width: 768px) {
+    /* Layout */
+    .game-layout { display: flex; flex-direction: column; gap: 16px; }
+    .game-main { order: 1 !important; }
+    .game-sidebar { order: 99 !important; }
+    
+    /* Hide breadcrumbs on mobile */
+    .breadcrumbs { display: none; }
+    
+    /* Game Header */
+    .game-box { border-radius: 8px; }
+    .game-header { padding: 12px; }
+    .game-header h1 { font-size: 18px; margin-bottom: 6px; }
+    .game-meta { font-size: 12px; gap: 8px; }
+    .game-meta span { padding: 4px 0; }
+    
+    /* Game Frame - Full width, good height */
+    .game-frame { 
+        aspect-ratio: 16/10; 
+        min-height: 220px;
+        border-radius: 0;
+    }
+    
+    /* Game Actions - Horizontal scroll */
+    .game-actions { 
+        padding: 10px; 
+        gap: 8px; 
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .game-actions button { 
+        padding: 10px 14px; 
+        font-size: 13px; 
+        min-width: auto;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    /* Description */
+    .game-desc { padding: 14px; font-size: 13px; line-height: 1.6; }
+    .game-desc h2 { font-size: 15px; margin-bottom: 8px; }
+    
+    /* Sidebar Info Boxes */
+    .game-sidebar { gap: 12px; }
+    .info-box { padding: 14px; border-radius: 8px; }
+    .info-box h3 { font-size: 14px; margin-bottom: 10px; }
+    .info-item { padding: 8px 0; font-size: 12px; }
+    .info-label { color: var(--muted); }
+    
+    /* Tags */
+    .tags { gap: 6px; }
+    .tag { padding: 4px 10px; font-size: 11px; }
+    
+    /* How to Play */
+    .how-to-play { padding: 12px; }
+    .how-to-play p { font-size: 12px; }
+    
+    /* Share Buttons */
+    .share-btns { gap: 8px; }
+    .share-btn { width: 36px; height: 36px; font-size: 14px; }
+}
+
+/* Extra small phones */
+@media (max-width: 380px) {
+    .grid { gap: 8px; }
+    .card-info { padding: 6px 8px; }
+    .card-info h3 { font-size: 11px; }
+    .game-header h1 { font-size: 16px; }
+    .game-actions button { padding: 8px 12px; font-size: 12px; }
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="./" class="logo">🎮 <span>Free Games</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <a href="./" class="back">← Back to Games</a>
+            <h1>Contact Us</h1>
+            <p>Have questions, feedback, or need support? We'd love to hear from you!</p>
+
+            <div class="contact-box">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>For general inquiries and support</p>
+                        <a href="mailto:barichati0696@gmail.com">barichati0696@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <div class="contact-info">
+                        <h3>Response Time</h3>
+                        <p>We typically respond within 24-48 hours</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🌍</div>
+                    <div class="contact-info">
+                        <h3>Language</h3>
+                        <p>We communicate in English</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <h3>Are the games really free?</h3>
+                    <p>Yes! All games on our platform are completely free to play. No downloads, no registration
+                        required.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Why isn't a game loading?</h3>
+                    <p>Games are hosted by third-party providers. Try refreshing the page, clearing your cache, or using
+                        a different browser. Some games may not work on mobile devices.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I request a specific game?</h3>
+                    <p>We regularly update our game library. Feel free to email us with game suggestions!</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I go fullscreen?</h3>
+                    <p>Click the "Fullscreen" button below the game, or press F11 on your keyboard.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is my data safe?</h3>
+                    <p>We collect minimal data and respect your privacy. Read our <a href="./privacy.html">Privacy
+                            Policy</a> for details.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 Free Online Games. <a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a> · <a
+                    href="./contact.html">Contact</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Online Games - Play 200+ Browser Games Instantly</title>
+<meta name="description" content="Play free online games directly in your browser. No downloads, no installs. Action, puzzle, racing, sports and more! Free games updated daily.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://medoxisto.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Online Games - Play 200+ Browser Games Instantly">
+<meta property="og:description" content="Play free online games directly in your browser. No downloads, no installs. Action, puzzle, racing, sports and more! Free games updated daily.">
+<meta property="og:url" content="https://medoxisto.github.io/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Online Games - Play 200+ Browser Games Instantly">
+<meta name="twitter:description" content="Play free online games directly in your browser. No downloads, no installs. Action, puzzle, racing, sports and more! Free games updated daily.">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+    --bg: #0c0d14;
+    --bg2: #1a1b28;
+    --card: rgba(255, 255, 255, .07);
+    --card-hover: #252636;
+    --accent: #6842ff;
+    --accent2: #a48eff;
+    --text: #f9faff;
+    --muted: #9ca3af;
+    --border: rgba(255, 255, 255, .08);
+    --radius: 10px;
+    --shadow: 0 3px 3px -2px rgba(0, 0, 0, .2);
+    --success: #10b981;
+    --warning: #f59e0b;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Nunito', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--accent2); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--accent); }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Skip Link */
+.skip { position: absolute; top: -40px; left: 0; background: var(--accent); color: #fff; padding: 8px 16px; z-index: 9999; border-radius: 30px; }
+.skip:focus { top: 0; }
+
+/* Container */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+header { background: var(--bg2); box-shadow: var(--shadow); padding: 12px 0; position: sticky; top: 0; z-index: 100; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.logo { font-size: 24px; font-weight: 800; color: var(--text); display: flex; align-items: center; gap: 10px; }
+.logo span { color: var(--accent); }
+
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav a { color: var(--muted); font-size: 14px; font-weight: 600; padding: 10px 16px; border-radius: var(--radius); transition: all .2s; }
+nav a:hover { color: var(--text); background: var(--card); }
+
+/* Search */
+.search { display: flex; background: var(--card); border-radius: 30px; overflow: hidden; border: 1px solid var(--border); }
+.search input { background: none; border: none; padding: 12px 20px; color: var(--text); font-size: 14px; width: 200px; }
+.search input::placeholder { color: var(--muted); }
+.search input:focus { outline: none; }
+.search button { background: var(--accent); border: none; color: #fff; padding: 12px 24px; cursor: pointer; font-weight: 700; border-radius: 30px; margin: 4px; }
+
+/* Main */
+main { min-height: 60vh; padding: 32px 0; }
+
+/* Hero */
+.hero { text-align: center; padding: 60px 24px; background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%); }
+.hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 800; margin-bottom: 16px; }
+.hero h1 span { color: var(--accent); }
+.hero p { color: var(--muted); font-size: 18px; max-width: 600px; margin: 0 auto 24px; }
+
+/* Sections */
+.section { margin: 40px 0; }
+.section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.section-title { font-size: 22px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.view-all { color: var(--accent2); font-size: 13px; font-weight: 700; }
+
+/* Grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.grid-sm { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+
+/* Game Card */
+.card { background: var(--card); border-radius: var(--radius); overflow: hidden; transition: all .25s ease; border: 1px solid transparent; display: block; position: relative; }
+.card:hover { transform: scale(1.03); box-shadow: 0 12px 40px rgba(104, 66, 255, .25); background: var(--card-hover); border-color: var(--accent); }
+.card-img { aspect-ratio: 16/9; overflow: hidden; position: relative; background: var(--bg2); }
+.card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.card:hover .card-img img { transform: scale(1.05); }
+.card-info { padding: 14px; }
+.card-info h3 { font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0 0 4px; color: var(--text); }
+.card-info .cat { font-size: 12px; color: var(--muted); text-transform: capitalize; }
+
+/* Badges */
+.badge { position: absolute; top: 10px; left: 10px; padding: 5px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.badge-new { background: var(--accent); color: #fff; }
+.badge-hot { background: #f59e0b; color: #000; }
+.badge-mobile { background: var(--success); color: #fff; }
+
+/* Favorite Button */
+.fav-btn { position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,.5); border: none; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: all .2s; }
+.fav-btn:hover { background: var(--accent); transform: scale(1.1); }
+.fav-btn.active { background: #ec4899; }
+
+/* Breadcrumbs */
+.breadcrumbs { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); margin-bottom: 20px; flex-wrap: wrap; }
+.breadcrumbs a { color: var(--accent2); }
+.breadcrumbs span { opacity: 0.5; }
+
+/* Game Page Layout */
+.game-layout { display: grid; grid-template-columns: 1fr 300px; gap: 24px; }
+
+
+/* Game Box */
+.game-box { background: var(--bg2); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+.game-header { padding: 24px; border-bottom: 1px solid var(--border); }
+.game-header h1 { font-size: clamp(22px, 4vw, 32px); font-weight: 800; margin-bottom: 10px; }
+.game-meta { display: flex; flex-wrap: wrap; gap: 16px; color: var(--muted); font-size: 14px; }
+.game-frame { background: #000; aspect-ratio: 16/9; }
+.game-frame iframe { width: 100%; height: 100%; border: none; }
+.game-actions { display: flex; justify-content: center; gap: 16px; padding: 20px; background: var(--bg); flex-wrap: wrap; }
+.game-actions button { background: var(--bg2); border: 1px solid var(--border); color: var(--text); padding: 14px 28px; border-radius: 30px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: inherit; transition: all .2s; }
+.game-actions button:hover { background: var(--accent); border-color: var(--accent); }
+.game-actions button.primary { background: var(--accent); border: none; }
+
+/* Game Sidebar */
+.game-sidebar { display: flex; flex-direction: column; gap: 20px; }
+.info-box { background: var(--bg2); border-radius: var(--radius); border: 1px solid var(--border); padding: 20px; }
+.info-box h3 { font-size: 16px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.info-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.info-item:last-child { border-bottom: none; }
+.info-label { color: var(--muted); }
+.info-value { font-weight: 600; }
+
+/* Tags */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.tag { background: var(--card); border: 1px solid var(--border); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; transition: all .2s; }
+.tag:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* How to Play */
+.how-to-play { background: var(--card); border-radius: var(--radius); padding: 16px; margin-top: 12px; }
+.how-to-play p { font-size: 14px; color: var(--muted); }
+
+/* Share Buttons */
+.share-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.share-btn { width: 40px; height: 40px; border-radius: 50%; border: none; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: all .2s; }
+.share-btn:hover { transform: scale(1.1); }
+.share-btn.twitter { background: #1da1f2; color: #fff; }
+.share-btn.facebook { background: #4267b2; color: #fff; }
+.share-btn.whatsapp { background: #25d366; color: #fff; }
+.share-btn.copy { background: var(--card); color: var(--text); border: 1px solid var(--border); }
+
+/* Description */
+.game-desc { padding: 24px; color: var(--muted); line-height: 1.8; }
+
+/* Related Games */
+.related-games { margin-top: 40px; }
+
+/* Category Cards */
+.cats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+.cat-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; text-align: center; transition: all .2s; }
+.cat-card:hover { border-color: var(--accent); transform: translateY(-4px); background: var(--card-hover); }
+.cat-card h3 { font-size: 15px; font-weight: 700; margin: 0 0 4px; }
+.cat-card span { font-size: 13px; color: var(--muted); }
+
+/* Footer */
+footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 40px 0; text-align: center; margin-top: 60px; }
+footer p { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+.footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+.footer-links a { color: var(--accent2); font-size: 14px; }
+
+/* Walkthrough */
+.walkthrough-section { margin-top: 24px; background: var(--bg2); border-radius: var(--radius); border: 1px solid var(--border); padding: 20px; }
+.walkthrough-section h2 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+
+/* Search Results */
+#search-results { display: none; }
+#search-results.active { display: block; }
+#search-input { width: 100%; padding: 16px 24px; background: var(--card); border: 1px solid var(--border); border-radius: 30px; color: var(--text); font-size: 16px; margin-bottom: 24px; }
+#search-input:focus { outline: none; border-color: var(--accent); }
+
+/* Recently Played / Favorites */
+#recently-played, #favorites { display: none; }
+#recently-played.has-games, #favorites.has-games { display: block; }
+
+/* Responsive */
+
+
+
+/* Cookie Consent */
+.cookie-popup { position: fixed; bottom: 20px; left: 20px; right: 20px; max-width: 400px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; z-index: 9999; box-shadow: 0 10px 40px rgba(0,0,0,.5); display: none; }
+.cookie-popup.show { display: block; }
+.cookie-popup p { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
+.cookie-popup .btns { display: flex; gap: 10px; }
+.cookie-popup button { padding: 10px 20px; border-radius: 20px; border: none; cursor: pointer; font-weight: 600; font-size: 14px; }
+.cookie-popup .accept { background: var(--accent); color: #fff; }
+.cookie-popup .decline { background: var(--card); color: var(--text); }
+
+/* ========== MOBILE OPTIMIZATION ========== */
+@media (max-width: 768px) {
+    /* Compact Header */
+    header { padding: 8px 0; }
+    .header-inner { gap: 10px; }
+    .logo { font-size: 18px; gap: 6px; }
+    .logo span { font-size: 16px; }
+    nav { display: none; }
+    .search { display: none; }
+    
+    /* Compact Container */
+    .container { padding: 0 12px; }
+    
+    /* Hero Section */
+    .hero { padding: 20px 12px; }
+    .hero h1 { font-size: 22px; margin-bottom: 8px; }
+    .hero p { font-size: 14px; margin-bottom: 16px; display: none; }
+    #search-input { padding: 12px 16px; font-size: 14px; margin-bottom: 16px; }
+    
+    /* Section Headers */
+    .section { margin: 20px 0; }
+    .section-header { margin-bottom: 12px; }
+    .section-title { font-size: 16px; }
+    
+    /* 2-Column Game Grid */
+    .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+    
+    /* Compact Game Cards */
+    .card { border-radius: 8px; }
+    .card-img { aspect-ratio: 16/10; border-radius: 8px 8px 0 0; }
+    .card-info { padding: 8px 10px; }
+    .card-info h3 { font-size: 12px; margin-bottom: 2px; }
+    .card-info .cat { font-size: 10px; }
+    .badge { padding: 3px 6px; font-size: 9px; top: 6px; left: 6px; }
+    .fav-btn { width: 28px; height: 28px; font-size: 14px; top: 6px; right: 6px; }
+    
+    /* Category Grid */
+    .cats-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 8px;
+    }
+    .cat-card { padding: 12px 8px; }
+    .cat-card h3 { font-size: 12px; }
+    .cat-card span { font-size: 10px; }
+    
+    /* Footer */
+    footer { padding: 24px 0; margin-top: 32px; }
+    footer p { font-size: 11px; }
+    .footer-links { gap: 12px; }
+    .footer-links a { font-size: 11px; }
+    
+    /* Cookie popup */
+    .cookie-popup { bottom: 10px; left: 10px; right: 10px; padding: 14px; }
+    .cookie-popup p { font-size: 12px; margin-bottom: 12px; }
+    .cookie-popup button { padding: 8px 14px; font-size: 12px; }
+}
+
+/* ========== GAME PAGE MOBILE ========== */
+@media (max-width: 768px) {
+    /* Layout */
+    .game-layout { display: flex; flex-direction: column; gap: 16px; }
+    .game-main { order: 1 !important; }
+    .game-sidebar { order: 99 !important; }
+    
+    /* Hide breadcrumbs on mobile */
+    .breadcrumbs { display: none; }
+    
+    /* Game Header */
+    .game-box { border-radius: 8px; }
+    .game-header { padding: 12px; }
+    .game-header h1 { font-size: 18px; margin-bottom: 6px; }
+    .game-meta { font-size: 12px; gap: 8px; }
+    .game-meta span { padding: 4px 0; }
+    
+    /* Game Frame - Full width, good height */
+    .game-frame { 
+        aspect-ratio: 16/10; 
+        min-height: 220px;
+        border-radius: 0;
+    }
+    
+    /* Game Actions - Horizontal scroll */
+    .game-actions { 
+        padding: 10px; 
+        gap: 8px; 
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .game-actions button { 
+        padding: 10px 14px; 
+        font-size: 13px; 
+        min-width: auto;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    /* Description */
+    .game-desc { padding: 14px; font-size: 13px; line-height: 1.6; }
+    .game-desc h2 { font-size: 15px; margin-bottom: 8px; }
+    
+    /* Sidebar Info Boxes */
+    .game-sidebar { gap: 12px; }
+    .info-box { padding: 14px; border-radius: 8px; }
+    .info-box h3 { font-size: 14px; margin-bottom: 10px; }
+    .info-item { padding: 8px 0; font-size: 12px; }
+    .info-label { color: var(--muted); }
+    
+    /* Tags */
+    .tags { gap: 6px; }
+    .tag { padding: 4px 10px; font-size: 11px; }
+    
+    /* How to Play */
+    .how-to-play { padding: 12px; }
+    .how-to-play p { font-size: 12px; }
+    
+    /* Share Buttons */
+    .share-btns { gap: 8px; }
+    .share-btn { width: 36px; height: 36px; font-size: 14px; }
+}
+
+/* Extra small phones */
+@media (max-width: 380px) {
+    .grid { gap: 8px; }
+    .card-info { padding: 6px 8px; }
+    .card-info h3 { font-size: 11px; }
+    .game-header h1 { font-size: 16px; }
+    .game-actions button { padding: 8px 12px; font-size: 12px; }
+}
+
+</style>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="container">
+<div class="header-inner">
+<a href="./" class="logo" aria-label="Home">🎮 <span>Free Games</span></a>
+<nav aria-label="Main">
+<a href="./">Home</a>
+<a href="./categories/action.html">Action</a>
+<a href="./categories/puzzle.html">Puzzle</a>
+<a href="./categories/racing.html">Racing</a>
+<a href="./categories/sports.html">Sports</a>
+</nav>
+<form class="search" action="./" method="get" role="search">
+<input type="search" id="q" name="q" placeholder="Search games..." aria-label="Search games">
+<button type="submit">Go</button>
+</form>
+</div>
+</div>
+</header>
+
+<main id="main">
+<section class="hero">
+<div class="container">
+<h1>🎮 <span>Free Online Games</span></h1>
+<p>Play 200+ browser games instantly. No downloads, no installs - just click and play!</p>
+<input type="text" id="search-input" placeholder="🔍 Search for games...">
+</div>
+</section>
+
+<div class="container">
+
+<!-- Search Results -->
+<section id="search-results" class="section">
+<div class="section-header">
+<h2 class="section-title">🔍 Search Results</h2>
+</div>
+<div class="grid" id="search-grid"></div>
+</section>
+
+<!-- Recently Played -->
+<section id="recently-played" class="section">
+<div class="section-header">
+<h2 class="section-title">⏱️ Continue Playing</h2>
+</div>
+<div class="grid" id="recent-grid"></div>
+</section>
+
+<!-- Featured -->
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">⭐ Featured Games</h2>
+<a href="./categories/action.html" class="view-all">View All →</a>
+</div>
+<div class="grid"><a href="./games/last-z-survival-shooter.html" class="card">
+<span class="badge badge-hot">🔥 Hot</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/xmm7ejt17ncqbkbfjcwtswrfu6rgdbg2/512x384.jpg" alt="Last Z Survival Shooter" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Last Z Survival Shooter</h3><p class="cat">Shooting</p></div>
+</a><a href="./games/christmas-bubble-shooter-game.html" class="card">
+<span class="badge badge-hot">🔥 Hot</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/aumacmqvzwt6w1r2whz2ukrlhfosxwss/512x384.jpg" alt="Christmas Bubble Shooter Game" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Christmas Bubble Shooter Game</h3><p class="cat">Hypercasual</p></div>
+</a><a href="./games/crazy-three-puzzle.html" class="card">
+<span class="badge badge-hot">🔥 Hot</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/ui0itlim8wbenxdcgc3o00ogl2fndzrs/512x384.jpg" alt="Crazy Three Puzzle" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Crazy Three Puzzle</h3><p class="cat">Hypercasual</p></div>
+</a><a href="./games/air-fighter-3d.html" class="card">
+<span class="badge badge-hot">🔥 Hot</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/0jrr2jg4sbbumx8hpoxo8bn3qvwdnjp7/512x384.jpg" alt="Air Fighter 3D" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Air Fighter 3D</h3><p class="cat">Shooting</p></div>
+</a><a href="./games/gun-upgrade-rush.html" class="card">
+<span class="badge badge-hot">🔥 Hot</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/ibdi5nxvuhzxk5ltd72ktnc5clcm7ho8/512x384.jpg" alt="Gun Upgrade Rush" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Gun Upgrade Rush</h3><p class="cat">Arcade</p></div>
+</a><a href="./games/farm-land-farming-life-game.html" class="card">
+<span class="badge badge-hot">🔥 Hot</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/lfqfciu8cezjl1atn5hpycz0l1rnw3p8/512x384.jpg" alt="Farm Land   Farming life game" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Farm Land   Farming life game</h3><p class="cat">Hypercasual</p></div>
+</a></div>
+</section>
+
+<!-- Categories -->
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">📂 Categories</h2>
+</div>
+<div class="cats-grid"><a href="./categories/.html" class="cat-card">
+<h3></h3><span>1 games</span>
+</a><a href="./categories/action.html" class="cat-card">
+<h3>Action</h3><span>12 games</span>
+</a><a href="./categories/adventure.html" class="cat-card">
+<h3>Adventure</h3><span>11 games</span>
+</a><a href="./categories/arcade.html" class="cat-card">
+<h3>Arcade</h3><span>27 games</span>
+</a><a href="./categories/boys.html" class="cat-card">
+<h3>Boys</h3><span>1 games</span>
+</a><a href="./categories/clicker.html" class="cat-card">
+<h3>Clicker</h3><span>4 games</span>
+</a><a href="./categories/girls.html" class="cat-card">
+<h3>Girls</h3><span>9 games</span>
+</a><a href="./categories/hypercasual.html" class="cat-card">
+<h3>Hypercasual</h3><span>45 games</span>
+</a><a href="./categories/multiplayer.html" class="cat-card">
+<h3>Multiplayer</h3><span>2 games</span>
+</a><a href="./categories/puzzle.html" class="cat-card">
+<h3>Puzzle</h3><span>55 games</span>
+</a><a href="./categories/racing.html" class="cat-card">
+<h3>Racing</h3><span>11 games</span>
+</a><a href="./categories/shooting.html" class="cat-card">
+<h3>Shooting</h3><span>14 games</span>
+</a></div>
+</section>
+
+<!-- New Games -->
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">🆕 New Games</h2>
+</div>
+<div class="grid"><a href="./games/marnyl-silence-the-haters.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/qsvp3xbk2zk4diq7d5v87ri8vl72sd8t/512x384.jpg" alt="MARNYL Silence The Haters" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>MARNYL Silence The Haters</h3><p class="cat">Shooting</p></div>
+</a><a href="./games/dino-t-rex-3d-run.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/0uq5hmbx1pi8xx5ivrnkyfphfurxkxlq/512x384.jpg" alt="Dino T Rex 3D Run" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Dino T Rex 3D Run</h3><p class="cat">Hypercasual</p></div>
+</a><a href="./games/word-match-3d.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/m27uyguq2k1men8en9f2hckdoytglv9g/512x384.jpg" alt="Word Match 3D" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Word Match 3D</h3><p class="cat">Puzzle</p></div>
+</a><a href="./games/stair-ball-hyper-casual.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/tgj2thd219rytx6czy5jr411hfiy6j34/512x384.jpg" alt="Stair Ball: Hyper Casual" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Stair Ball: Hyper Casual</h3><p class="cat">Action</p></div>
+</a><a href="./games/k-pop-demon-hunters-nail-studio.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/qx1i9urbjg9rcbcjm4b18lurjnvc2gx7/512x384.jpg" alt="K Pop Demon Hunters Nail Studio" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>K Pop Demon Hunters Nail Studio</h3><p class="cat">Puzzle</p></div>
+</a><a href="./games/wood-block-brain-puzzle.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/9o7pp1cj2kgu8onu66xjp545xpywi2ze/512x384.jpg" alt="Wood Block Brain Puzzle" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Wood Block Brain Puzzle</h3><p class="cat">Puzzle</p></div>
+</a><a href="./games/nut-bolt-puzzle-game.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/qf25ickz6rnca426qr18uwsneubpx6rj/512x384.jpg" alt="Nut Bolt Puzzle Game" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Nut Bolt Puzzle Game</h3><p class="cat">Puzzle</p></div>
+</a><a href="./games/rolling-color-ball-game.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/gbsfn2uts49a1j53nfqqrikznu08oaek/512x384.jpg" alt="Rolling Color Ball Game" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Rolling Color Ball Game</h3><p class="cat">Hypercasual</p></div>
+</a><a href="./games/farm-house-crash-match-game.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/2mlw18zjwhj5gk57wjhmz7bgwpe5h7db/512x384.jpg" alt="Farm House Crash Match Game" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Farm House Crash Match Game</h3><p class="cat">Puzzle</p></div>
+</a><a href="./games/survive-the-night.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/2pjzp1topm9l3t6teqmnk2ym27iporsp/512x384.jpg" alt="Survive The Night" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Survive The Night</h3><p class="cat">Puzzle</p></div>
+</a><a href="./games/brainrot-bridge-race-3d.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/e27ezlhh5edki5wv0aad96d8w3g1l1bf/512x384.jpg" alt="Brainrot Bridge Race 3D" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Brainrot Bridge Race 3D</h3><p class="cat">Multiplayer</p></div>
+</a><a href="./games/moto-bike-extreme-hill-stunts.html" class="card">
+<span class="badge badge-new">New</span>
+<div class="card-img"><img src="https://img.gamemonetize.com/obew7eabe9gst3mfz3uoj444bqaa6o0x/512x384.jpg" alt="Moto Bike Extreme Hill Stunts" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Moto Bike Extreme Hill Stunts</h3><p class="cat">Sports</p></div>
+</a></div>
+</section>
+
+<!-- Popular -->
+<section class="section">
+<div class="section-header">
+<h2 class="section-title">🔥 Popular Games</h2>
+</div>
+<div class="grid"><a href="./games/capybara-mukbang-asmr.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/8iaa1egaoj6mkjmjcvam9klnuqr9g8bt/512x384.jpg" alt="Capybara Mukbang ASMR" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Capybara Mukbang ASMR</h3><p class="cat">Hypercasual</p></div>
+</a><a href="./games/santa-claus-xmas-run.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/88vl3rdrsq1lrzhnq33q3ck9dngyg4el/512x384.jpg" alt="Santa Claus Xmas Run" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Santa Claus Xmas Run</h3><p class="cat">Puzzle</p></div>
+</a><a href="./games/mathmates-3d-brain-quest.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/an1qn67onw104whrxlc1tro20zajqytj/512x384.jpg" alt="MathMates 3D: Brain Quest" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>MathMates 3D: Brain Quest</h3><p class="cat">Puzzle</p></div>
+</a><a href="./games/axe-champ-simulator.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/uvr40dbo9klj89pnj133jy6jnfnevm91/512x384.jpg" alt="Axe Champ Simulator" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Axe Champ Simulator</h3><p class="cat">Hypercasual</p></div>
+</a><a href="./games/color-box-ship.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/fj1qbt440zwgptaddzu0yyenn68o1tti/512x384.jpg" alt="Color Box Ship" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Color Box Ship</h3><p class="cat">Arcade</p></div>
+</a><a href="./games/paper-dolls-diy-diary.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/0qh5mn3joqd4wzlq09bak2qjvphob3c1/512x384.jpg" alt="Paper Dolls DIY Diary" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Paper Dolls DIY Diary</h3><p class="cat">Hypercasual</p></div>
+</a><a href="./games/tuntun-sahur-super-runner-game.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/ru184msxoyuxepcbwbgl62wo0un74jqd/512x384.jpg" alt="TunTun Sahur: Super Runner Game" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>TunTun Sahur: Super Runner Game</h3><p class="cat">Action</p></div>
+</a><a href="./games/black-hole-io-3d-game.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/4wnjcp7cea8z1qza1cyw6aj2nmp90q9c/512x384.jpg" alt="Black Hole io 3D Game" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Black Hole io 3D Game</h3><p class="cat">Hypercasual</p></div>
+</a><a href="./games/ambulance-rescue-hospital-game.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/ye7mb9a2adqnli65z3i06h2gikcaaru7/512x384.jpg" alt="Ambulance Rescue Hospital Game" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Ambulance Rescue Hospital Game</h3><p class="cat">Adventure</p></div>
+</a><a href="./games/sniper-shooting-offline-games.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/ndmuxgujjnz4m51i9ylggukct53rhd8q/512x384.jpg" alt="Sniper Shooting Offline Games" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Sniper Shooting Offline Games</h3><p class="cat">Shooting</p></div>
+</a><a href="./games/mission-santa-deliver-the-gifts.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/o055ppwfelpahjhwjjpbnvncc7l5j2g0/512x384.jpg" alt="Mission Santa: Deliver the Gifts" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>Mission Santa: Deliver the Gifts</h3><p class="cat">Hypercasual</p></div>
+</a><a href="./games/cosmos-404.html" class="card">
+
+<div class="card-img"><img src="https://img.gamemonetize.com/il8hi4r9ts9l9r8qu29kg3bz2zprd2vu/512x384.jpg" alt="COSMOS 404" loading="lazy" width="320" height="180"></div>
+<div class="card-info"><h3>COSMOS 404</h3><p class="cat">Hypercasual</p></div>
+</a></div>
+</section>
+
+</div>
+</main>
+
+<script>
+window.GAMES_INDEX = [{"slug": "last-z-survival-shooter", "title": "Last Z Survival Shooter", "category": "Shooting", "thumb": "https://img.gamemonetize.com/xmm7ejt17ncqbkbfjcwtswrfu6rgdbg2/512x384.jpg", "tags": ["attack", " Battle", " Shoot", " survival"]}, {"slug": "christmas-bubble-shooter-game", "title": "Christmas Bubble Shooter Game", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/aumacmqvzwt6w1r2whz2ukrlhfosxwss/512x384.jpg", "tags": ["2025 games", " Bubble Shooter", " Casual", " Shooter"]}, {"slug": "crazy-three-puzzle", "title": "Crazy Three Puzzle", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/ui0itlim8wbenxdcgc3o00ogl2fndzrs/512x384.jpg", "tags": ["2025 games", " 3D Games", " Arcade", " arrow", " Brain", " Draw", " Fun", " Online", " Puzzle", " Relaxation"]}, {"slug": "air-fighter-3d", "title": "Air Fighter 3D", "category": "Shooting", "thumb": "https://img.gamemonetize.com/0jrr2jg4sbbumx8hpoxo8bn3qvwdnjp7/512x384.jpg", "tags": ["2025 games", " 3D Games", " Action", " Air", " Arcade", " Fight", " Game", " jet", " Simulation", " War"]}, {"slug": "gun-upgrade-rush", "title": "Gun Upgrade Rush", "category": "Arcade", "thumb": "https://img.gamemonetize.com/ibdi5nxvuhzxk5ltd72ktnc5clcm7ho8/512x384.jpg", "tags": ["3D", " Arcade", " Bullet", " Gun", " Hypercasual", " Obstacle", " running", " Shooter"]}, {"slug": "farm-land-farming-life-game", "title": "Farm Land   Farming life game", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/lfqfciu8cezjl1atn5hpycz0l1rnw3p8/512x384.jpg", "tags": ["Casual", " Farm", " grow", " Island", " Simulation"]}, {"slug": "marnyl-silence-the-haters", "title": "MARNYL Silence The Haters", "category": "Shooting", "thumb": "https://img.gamemonetize.com/qsvp3xbk2zk4diq7d5v87ri8vl72sd8t/512x384.jpg", "tags": ["1 Player", " Action", " Arena", " Battle", " Best Games", " endless", " Enemy", " Killing", " Level", " Music", " Shooting", " survival", " Top Down", " weapons"]}, {"slug": "dino-t-rex-3d-run", "title": "Dino T Rex 3D Run", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/0uq5hmbx1pi8xx5ivrnkyfphfurxkxlq/512x384.jpg", "tags": ["3D", " Action", " Best Games", " Classic", " dino", " Dinosaur", " endless", " Hypercasual", " Jumping", " Platform", " Retro", " running", " Skill", " unity games"]}, {"slug": "word-match-3d", "title": "Word Match 3D", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/m27uyguq2k1men8en9f2hckdoytglv9g/512x384.jpg", "tags": ["3D", " Brain", " Educational", " Letters", " Logic", " Management", " Matching", " Puzzle", " Word"]}, {"slug": "stair-ball-hyper-casual", "title": "Stair Ball: Hyper Casual", "category": "Action", "thumb": "https://img.gamemonetize.com/tgj2thd219rytx6czy5jr411hfiy6j34/512x384.jpg", "tags": ["1 Player", " 3D", " 3D Games", " Ball", " jump", " Jumping", " run", " running"]}, {"slug": "k-pop-demon-hunters-nail-studio", "title": "K Pop Demon Hunters Nail Studio", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/qx1i9urbjg9rcbcjm4b18lurjnvc2gx7/512x384.jpg", "tags": ["1 Player", " Fashion"]}, {"slug": "wood-block-brain-puzzle", "title": "Wood Block Brain Puzzle", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/9o7pp1cj2kgu8onu66xjp545xpywi2ze/512x384.jpg", "tags": ["2025 games", " Best Games", " Block", " Brain", " Classic", " free games for your site", " Logic", " mineblock", " Puzzle", " Relaxation"]}, {"slug": "nut-bolt-puzzle-game", "title": "Nut Bolt Puzzle Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/qf25ickz6rnca426qr18uwsneubpx6rj/512x384.jpg", "tags": ["2025 games", " Casual", " Hypercasual", " Puzzle"]}, {"slug": "rolling-color-ball-game", "title": "Rolling Color Ball Game", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/gbsfn2uts49a1j53nfqqrikznu08oaek/512x384.jpg", "tags": ["2025 games", " Casual", " Hypercasual", " Puzzle"]}, {"slug": "farm-house-crash-match-game", "title": "Farm House Crash Match Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/2mlw18zjwhj5gk57wjhmz7bgwpe5h7db/512x384.jpg", "tags": ["Adventure", " Farm", " Match 3", " Puzzle"]}, {"slug": "survive-the-night", "title": "Survive The Night", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/2pjzp1topm9l3t6teqmnk2ym27iporsp/512x384.jpg", "tags": ["Escape", " Horror", " Room", " survival"]}, {"slug": "brainrot-bridge-race-3d", "title": "Brainrot Bridge Race 3D", "category": "Multiplayer", "thumb": "https://img.gamemonetize.com/e27ezlhh5edki5wv0aad96d8w3g1l1bf/512x384.jpg", "tags": ["Battle", " Brainrot", " Racing", " running"]}, {"slug": "moto-bike-extreme-hill-stunts", "title": "Moto Bike Extreme Hill Stunts", "category": "Sports", "thumb": "https://img.gamemonetize.com/obew7eabe9gst3mfz3uoj444bqaa6o0x/512x384.jpg", "tags": ["2025 games", " Adventure", " Best Games", " Bike", " Driving", " hills", " jump", " Race", " Simulation", " Stunts"]}, {"slug": "capybara-mukbang-asmr", "title": "Capybara Mukbang ASMR", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/8iaa1egaoj6mkjmjcvam9klnuqr9g8bt/512x384.jpg", "tags": ["Cook", " Dress Up", " Food", " Simulator"]}, {"slug": "santa-claus-xmas-run", "title": "Santa Claus Xmas Run", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/88vl3rdrsq1lrzhnq33q3ck9dngyg4el/512x384.jpg", "tags": ["Avoid", " Christmas", " Collecting", " html5 games", " jump", " Platform", " Santa", " Santa Claus", " Skill"]}, {"slug": "mathmates-3d-brain-quest", "title": "MathMates 3D: Brain Quest", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/an1qn67onw104whrxlc1tro20zajqytj/512x384.jpg", "tags": ["3D", " 3D Games", " Best Games", " Brain", " Educational", " Kids", " WebGL"]}, {"slug": "axe-champ-simulator", "title": "Axe Champ Simulator", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/uvr40dbo9klj89pnj133jy6jnfnevm91/512x384.jpg", "tags": ["Action", " attack", " Hypercasual"]}, {"slug": "color-box-ship", "title": "Color Box Ship", "category": "Arcade", "thumb": "https://img.gamemonetize.com/fj1qbt440zwgptaddzu0yyenn68o1tti/512x384.jpg", "tags": ["1 Player", " 2D", " Action", " Color", " Coloring", " Fun", " Funny", " ship"]}, {"slug": "paper-dolls-diy-diary", "title": "Paper Dolls DIY Diary", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/0qh5mn3joqd4wzlq09bak2qjvphob3c1/512x384.jpg", "tags": ["Cute", " Dress Up", " Makeover"]}, {"slug": "tuntun-sahur-super-runner-game", "title": "TunTun Sahur: Super Runner Game", "category": "Action", "thumb": "https://img.gamemonetize.com/ru184msxoyuxepcbwbgl62wo0un74jqd/512x384.jpg", "tags": ["1 Player", " 3D", " 3D Games", " Brainrot", " Brainrot Italian", " Brainrot sahuuur", " Italian Brainrot", " run", " running"]}, {"slug": "black-hole-io-3d-game", "title": "Black Hole io 3D Game", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/4wnjcp7cea8z1qza1cyw6aj2nmp90q9c/512x384.jpg", "tags": ["2025 games", " Adventure", " Brain", " Candy", " Casual", " Color", " Games", " Jelly", " Kids", " Match 3", " Relaxation"]}, {"slug": "ambulance-rescue-hospital-game", "title": "Ambulance Rescue Hospital Game", "category": "Adventure", "thumb": "https://img.gamemonetize.com/ye7mb9a2adqnli65z3i06h2gikcaaru7/512x384.jpg", "tags": ["2025 games", " ambulance", " carparking", " Driving", " Parking"]}, {"slug": "sniper-shooting-offline-games", "title": "Sniper Shooting Offline Games", "category": "Shooting", "thumb": "https://img.gamemonetize.com/ndmuxgujjnz4m51i9ylggukct53rhd8q/512x384.jpg", "tags": ["2025 games", " 3D Games", " Action", " amazing", " Enemy", " Game", " Shooter", " Shooting", " Sniper"]}, {"slug": "mission-santa-deliver-the-gifts", "title": "Mission Santa: Deliver the Gifts", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/o055ppwfelpahjhwjjpbnvncc7l5j2g0/512x384.jpg", "tags": ["1 Player", " 2025 games", " 2D", " Casual", " Christmas", " Classic", " endless", " Flight", " Hypercasual", " Mobile", " Santa", " Santa Claus", " unity"]}, {"slug": "cosmos-404", "title": "COSMOS 404", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/il8hi4r9ts9l9r8qu29kg3bz2zprd2vu/512x384.jpg", "tags": ["3D", " Arcade", " Casual", " Collecting", " Hypercasual", " running", " Space"]}, {"slug": "urban-sniper-2", "title": "Urban Sniper 2", "category": "Shooting", "thumb": "https://img.gamemonetize.com/nkiklh747mm8bjel7kfxh0eazcy2ka41/512x384.jpg", "tags": ["3D", " 3D Games", " Action", " CSGO", " First Person Shooter", " Gun", " Shoot", " Shoot 'Em Up", " Shooter", " Shooting", " Sniper", " Unity3D"]}, {"slug": "arcanoid-side-guns", "title": "Arcanoid Side Guns", "category": "Arcade", "thumb": "https://img.gamemonetize.com/ocq7vi913jlqifdczchb81cybsvhnqph/512x384.jpg", "tags": ["Ai Games", " Arcade", " Arkanoid", " Gun", " HTML5", " Mentolatux"]}, {"slug": "fashion-battle-queen", "title": "Fashion Battle Queen", "category": "Girls", "thumb": "https://img.gamemonetize.com/l1maz5r36o17yfhyvl7ffbdvm85k5b4d/512x384.jpg", "tags": ["Battle", " beauty", " Casual", " Dress Up", " Fashion", " Girl", " running"]}, {"slug": "runner-tomato-hyper-casual", "title": "Runner Tomato: Hyper Casual", "category": "Action", "thumb": "https://img.gamemonetize.com/w1anzed55xbbm11n1fdkrc8j1rb9qp4n/512x384.jpg", "tags": ["1 Player", " 3D", " 3D Games", " Action", " Adventure", " run", " running"]}, {"slug": "christmas-girls-dress-up", "title": "Christmas Girls Dress Up", "category": "Girls", "thumb": "https://img.gamemonetize.com/caf2pcmqktbsq5pko8z361puirtynic5/512x384.jpg", "tags": ["1 Player", " Christmas", " Dress Up", " Fashion", " Girl"]}, {"slug": "fashion-stylist-salon-makeover", "title": "Fashion Stylist Salon Makeover", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/6xk3hmal6tg86n9uw4rd1le61uht4gzn/512x384.jpg", "tags": ["Fashion", " Fun", " Makeover", " Simulator"]}, {"slug": "kpop-studio-music-beats", "title": "Kpop Studio Music Beats", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/x3n9xerobkb4hcsn16vo54vzf3mhunpk/512x384.jpg", "tags": ["Fun", " Kids", " Music", " Rhythm"]}, {"slug": "labubu-memory-challenge", "title": "Labubu Memory Challenge", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/ujddtcm8dnx4ry5qvtwqntf89kfzfi4i/512x384.jpg", "tags": ["Kids", " Labubu", " Memory", " Mobile"]}, {"slug": "chill-waves-mini-games", "title": "Chill Waves Mini Games", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/zw602ze7mimrlu4y6ok48uhh297971zn/512x384.jpg", "tags": ["2025 games", " 3D Games", " amazing", " Arcade", " Brain", " Brainrot", " Relaxation", " Super", " surprize"]}, {"slug": "connect-dots-puzzle-game", "title": "Connect Dots Puzzle Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/sdzab1fve8n864qjvyt8uilelg4heyd6/512x384.jpg", "tags": ["2025 games", " 3D Games", " amazing", " Brain", " Brainrot", " Fun", " Game", " Puzzle", " puzzleblock", " Relaxation"]}, {"slug": "ear-doctor-care-game", "title": "Ear Doctor Care Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/n3i3rbf2wsitkfibi62vhntgc9rm73r9/512x384.jpg", "tags": ["2025 games", " Casual", " Doctor", " Hypercasual"]}, {"slug": "cosmic-glider", "title": "Cosmic Glider", "category": "Arcade", "thumb": "https://img.gamemonetize.com/1ordv729xxzwe1slwg6mfglcxqvpdv0s/512x384.jpg", "tags": ["3D", " 3D Games", " Arcade", " Best Games"]}, {"slug": "slash-blitz-master", "title": "Slash Blitz Master", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/n0sqg09g8in6vjz54cdnkm05r5qar47o/512x384.jpg", "tags": ["3D Games", " attack", " Battlegrounds", " Casual", " Launch"]}, {"slug": "connect-hero", "title": "Connect Hero", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/eub830b0mgebekb5aidmy5rvpc2crurz/512x384.jpg", "tags": ["Casual", " Puzzle", " Shoot", " Superhero"]}, {"slug": "drive-pro-3d", "title": "Drive Pro 3D", "category": "Racing", "thumb": "https://img.gamemonetize.com/jqwz9v6dty5x1y6ug4cpb7xyjoimawu8/512x384.jpg", "tags": ["3D", " Arcade", " Car", " Hypercasual", " Obstacle", " Racing"]}, {"slug": "blocky-zombie-shooting", "title": "Blocky Zombie Shooting", "category": "Shooting", "thumb": "https://img.gamemonetize.com/10ldsmty6x2gwdw3kgxpjbfqoxshqupm/512x384.jpg", "tags": ["Driving", " Mentolatux", " Racing", " Shooting", " vehicle", " WebGL", " Zombie"]}, {"slug": "castle-island-clicker-game", "title": "Castle Island Clicker Game", "category": "Arcade", "thumb": "https://img.gamemonetize.com/08zz54721tnmudem371f33fvgc17w6e0/512x384.jpg", "tags": ["2025 games", " Castle", " Number", " Tower Defense"]}, {"slug": "master-archer-2025", "title": "Master Archer 2025", "category": "Arcade", "thumb": "https://img.gamemonetize.com/69b1fcb4p2ce5ty7aaoexe1yfm7wte2t/512x384.jpg", "tags": ["1 Player", " 2025 games", " 2D", " Adventure", " Arcade", " arrows", " Enemies"]}, {"slug": "escape-from-dictatorship-runner-game", "title": "Escape from Dictatorship: Runner Game", "category": "Action", "thumb": "https://img.gamemonetize.com/nbh1x1rbv0baw88ta8gxc3m7q4azmpjt/512x384.jpg", "tags": ["1 Player", " 3D", " 3D Games", " Action", " Escape", " run", " running"]}, {"slug": "scratch-to-win-game", "title": "Scratch To Win Game", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/2gdn0qw5g7sar6shz0nsnvfh0ack7i8l/512x384.jpg", "tags": ["2025 games", " Casual", " Hypercasual", " Puzzle"]}, {"slug": "annoying-uncle-punch-the-meme", "title": "Annoying Uncle   Punch the Meme", "category": "Action", "thumb": "https://img.gamemonetize.com/dmbzuklinvm2zf8p1cumrsoujm6iir9p/512x384.jpg", "tags": ["Casual", " Crazy", " Punch"]}, {"slug": "double-klondike-solitaire-card", "title": "double klondike solitaire Card", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/kbac8c4u2b42ezncjx0049awdderpzxm/512x384.jpg", "tags": ["Card", " Casino", " Poker", " Puzzle", " Slot Machine", " Solitaire"]}, {"slug": "pixel-destroyer", "title": "Pixel Destroyer", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/kk2f1i1jbnfvg87cu5d6pso2jj0mb7t7/512x384.jpg", "tags": ["Arkanoid", " Ball", " Christmas", " Shoot"]}, {"slug": "diy-ugly-christmas-sweater", "title": "DIY Ugly Christmas Sweater", "category": "Girls", "thumb": "https://img.gamemonetize.com/8c3sjuae8vo7epvhr6gsk025gulyuecd/512x384.jpg", "tags": ["1 Player", " Christmas", " Creation", " Design", " Dress Up", " Fashion", " Girl", " Winter"]}, {"slug": "pro-builder-3d", "title": "Pro Builder 3D", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/jy1zy8wwj3fksi9mgqw44v1b43xzqohn/512x384.jpg", "tags": ["3D", " builder", " construction", " House", " idle", " Simulation"]}, {"slug": "memory-lane", "title": "Memory Lane", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/8ww1qvuf37fo6hnmscv4m3hja4f096he/512x384.jpg", "tags": ["1 Player", " 2D", " Arcade", " Jumping", " Memory", " Pixel", " Platform", " Puzzle", " Retro"]}, {"slug": "ping-pong-ball-game", "title": "Ping Pong Ball Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/b1uqdtule8d5duwapga2ju5983obn4e6/512x384.jpg", "tags": ["2025 games", " 3D Games", " Adventure", " Ball"]}, {"slug": "coffee-tycoon", "title": "Coffee Tycoon", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/t5mo61zy3exqj175p281jbjxiwi3s1v6/512x384.jpg", "tags": ["3D", " Food", " Management", " Restaurant", " Simulation", " unity games"]}, {"slug": "garden-war", "title": "Garden War", "category": "Shooting", "thumb": "https://img.gamemonetize.com/acsafdbxzfco30c0iv3pn9t22x9ezel7/512x384.jpg", "tags": ["1 Player", " Battle", " Farm", " Fun", " War"]}, {"slug": "gravity-pulse", "title": "Gravity Pulse", "category": "Arcade", "thumb": "https://img.gamemonetize.com/4ou77fx68xo237ynuy4ct3djbzbnywxe/512x384.jpg", "tags": [".io Games", " 1 Player", " Action", " survival"]}, {"slug": "flag-merging-puzzle-game", "title": "Flag Merging   Puzzle Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/6jjp0jsq0vvvt1yep2h8lp2i1oxmdtm5/512x384.jpg", "tags": ["1 Player", " Bubble", " Casual", " Puzzle"]}, {"slug": "escape-from-hell-crazy-runner-game", "title": "Escape from Hell: Crazy Runner Game", "category": "Action", "thumb": "https://img.gamemonetize.com/e91ouncy54s94hw42d6142hsf4iti5vg/512x384.jpg", "tags": ["1 Player", " 3D Games", " running"]}, {"slug": "ice-dash", "title": "ICE DASH", "category": "Adventure", "thumb": "https://img.gamemonetize.com/k77rpabre5am7bilq0zsjld6fv8zussk/512x384.jpg", "tags": [".io Games", " 1 Player", " 2025 games", " 2D", " Adventure", " Android", " Arcade"]}, {"slug": "perfect-tidy", "title": "Perfect Tidy", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/xqw51wy0b0p332po2zia9w8sadpz7fgp/512x384.jpg", "tags": ["Car", " Casual", " Cleaning", " Relaxation"]}, {"slug": "adventure-rush", "title": "Adventure Rush", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/3rv2agmrwyrr60xqtrbj4zm4wvzmel3h/512x384.jpg", "tags": ["Adventure", " Ball", " free html5 games for your website", " Geometry", " Jumping", " kiz10", " running"]}, {"slug": "m2-blocks-2048", "title": "M2 BLOCKS 2048", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/kspqjp4u64fwgdnq0v025uri509teye1/512x384.jpg", "tags": ["2048", " Block", " Brain", " mapi games", " Number", " Puzzle", " puzzleblock", " Tetris"]}, {"slug": "crazy-christmas-fun-2", "title": "Crazy Christmas Fun 2", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/kf4zckp8q2ls38dy3xx6bgsfv50gsnaw/512x384.jpg", "tags": ["Christmas", " Kart", " Santa Claus"]}, {"slug": "santas-snowy-sprint", "title": "Santas Snowy Sprint", "category": "Adventure", "thumb": "https://img.gamemonetize.com/v4rl3sdyui8v4xrk4ahgccdlpwan5au8/512x384.jpg", "tags": ["Adventure", " Best Games", " Cartoon", " Casual", " Christmas", " Crazy", " Planet", " Race", " Santa", " Santa Claus", " Winter"]}, {"slug": "santa-collecting-gifts", "title": "Santa  Collecting gifts", "category": "Arcade", "thumb": "https://img.gamemonetize.com/9l3npfpud13rxnfixu6dx9yoojgw1tng/512x384.jpg", "tags": ["Christmas", " Holiday", " New", " Santa", " Santa Claus", " Skill", " Snow"]}, {"slug": "santa-gift-collect-game", "title": "Santa Gift Collect Game", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/vfrlkliuah2j0wzrg405r58i9ytilf8f/512x384.jpg", "tags": ["2025 games", " Boxing", " Collecting", " Santa", " Santa Claus"]}, {"slug": "santa-on-fire", "title": "Santa on Fire", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/734cmz6mrjj4vwxeyaxhw6mepp7msdhr/512x384.jpg", "tags": ["2D", " amazing", " Arcade", " Best Games", " Boy", " Cartoon", " Cat", " Christmas", " Clicker", " Cute", " endless", " Fun", " Santa", " unity games"]}, {"slug": "christmas-onet-connect", "title": "Christmas Onet Connect", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/d9nv7htz1ahz633c0vcjiv25qutmwyf2/512x384.jpg", "tags": ["Christmas", " HTML5", " html5 games", " Mahjong", " Mobile"]}, {"slug": "nutsforwinter", "title": "NutsForWinter", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/myw0pwlknsc217kcq47bwf988w79g70x/512x384.jpg", "tags": ["2025 games", " Adventure", " Arcade"]}, {"slug": "winter-hexa-stack", "title": "Winter Hexa Stack", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/hibeqes1lf3e0eb1hofflskm5cysjrok/512x384.jpg", "tags": ["Block", " Christmas", " hexa", " sort", " sorting", " Winter"]}, {"slug": "jingle-juggle-merge", "title": "Jingle Juggle Merge", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/s5qaj4t9xc5i923apf39ahhnvy8ezv60/512x384.jpg", "tags": ["Christmas", " Holiday", " Santa", " Santa Claus"]}, {"slug": "the-horde", "title": "The Horde", "category": "Shooting", "thumb": "https://img.gamemonetize.com/439zdrtozj8ankic3t7ebh6ghjy1kqpe/512x384.jpg", "tags": ["2D", " Action", " Multiplayer"]}, {"slug": "balanceduel", "title": "BalanceDuel", "category": "Stickman", "thumb": "https://img.gamemonetize.com/x3qzkzg6n6bflmzh2y18xeinpm8f59np/512x384.jpg", "tags": ["1 Player", " Fight", " firefighters", " Knight", " Monster"]}, {"slug": "jungle-mart-idle-game", "title": "Jungle Mart idle game", "category": "Adventure", "thumb": "https://img.gamemonetize.com/e8eah86fzgbb5rpni7i2zqk2huqks6nm/512x384.jpg", "tags": [".io", " .io Games", " 1 Player", " 2D", " Adventure", " Farm", " Food", " idle", " Kids", " Monkey"]}, {"slug": "idle-cave-story", "title": "Idle Cave Story", "category": "Adventure", "thumb": "https://img.gamemonetize.com/7t6ygohziy6t8xn7x5ksxlnqcyeeajox/512x384.jpg", "tags": ["Adventure", " Battle", " building", " Casual", " idle", " Management", " Simulation", " Strategy"]}, {"slug": "vehicle-driving-master-game", "title": "Vehicle Driving Master Game", "category": "Adventure", "thumb": "https://img.gamemonetize.com/qarvyvvg2opieitmizdgb8aoik63t0jm/512x384.jpg", "tags": ["2025 games", " Car", " Parking", " Truck", " vehicle"]}, {"slug": "smooth-mood-mini-games", "title": "Smooth Mood Mini Games", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/jh6u3d8bkely91iztkzk69896odl6qum/512x384.jpg", "tags": ["2025 games", " 2D", " Adventure", " Arcade", " Best Games", " Brainrot", " Brainrot Italian", " Relaxation"]}, {"slug": "prism-match-3d", "title": "Prism Match 3D", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/t98bbzmv3a9g4fwg2lph0374wdhuvoln/512x384.jpg", "tags": ["1 Player", " 3D", " Best Games", " free html5 games for your website", " HTML5", " html5 games", " Match 3", " Match-3", " Matching", " Mobile", " Puzzle", " puzzleblock", " touch", " touchscreen"]}, {"slug": "metastack", "title": "MetaStack", "category": "Clicker", "thumb": "https://img.gamemonetize.com/dlnb4987u5ap9i4p8phnryzhuqulufa5/512x384.jpg", "tags": ["1 Player", " 2025 games", " Android", " blocky"]}, {"slug": "drivex-city", "title": "DriveX City", "category": "Racing", "thumb": "https://img.gamemonetize.com/rt3n9tqlyil0j3io7atk39vtqz9nr5cr/512x384.jpg", "tags": ["1 Player", " 2025 games", " 2048", " 2D", " Ai Games", " amazing"]}, {"slug": "water-sort-master", "title": "Water Sort Master", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/ka46hy72vwpoy3pppugopn6ppwm7rkwd/512x384.jpg", "tags": ["1 Player", " 2025 games", " Brain", " Casual", " Color", " HTML5", " html5 games", " Logic", " Mobile", " Puzzle", " Relaxation", " sort", " Strategy", " water"]}, {"slug": "qblock-puzzle", "title": "QBlock Puzzle", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/t9xqzh1133o06x3soxt2kmek6mgmt778/512x384.jpg", "tags": ["1 Player", " Bejeweled", " Block", " Board", " Brain", " Casual", " Classic", " free games for your site", " HTML5", " Logic", " Mind", " puzzleblock", " Tetris", " WebGL"]}, {"slug": "cube-play", "title": "Cube Play", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/vswya9xt28yiwqzj513ktobl52irix5i/512x384.jpg", "tags": ["1 Player", " 3D", " 3D Games", " Collecting", " Color", " endless", " Puzzle"]}, {"slug": "sticky-planet", "title": "Sticky Planet", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/5it2ku5rbtw1gwqdl0woc9wmqo47e4q6/512x384.jpg", "tags": ["1 Player", " Arcade", " Brain", " Casual", " HTML5"]}, {"slug": "gothic-knife", "title": "Gothic Knife", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/eug6wzijzbk3ykimgaogrpbt4d05rnt8/512x384.jpg", "tags": ["1 Player", " Mobile", " Pixel"]}, {"slug": "gasspark", "title": "GasSpark", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/g4fnv1ugi01r781ilpjqflasuh2clp9y/512x384.jpg", "tags": ["Best Games", " Casual", " Educational", " Science"]}, {"slug": "santa-vs-zomby", "title": "Santa Vs Zomby", "category": "Sports", "thumb": "https://img.gamemonetize.com/ssyulsswaf3fi5ycarggemnrmysrv3gd/512x384.jpg", "tags": ["angrybirds", " mapi games", " Santa", " Santa Claus", " Zombie"]}, {"slug": "the-zombie-house", "title": "The Zombie House", "category": "Shooting", "thumb": "https://img.gamemonetize.com/kqrdzycb73wfohom35hrnae8ttuz9b1u/512x384.jpg", "tags": ["Action", " Horror", " Shoot", " survival", " Zombie"]}, {"slug": "oil-tanker-truck-parking-game", "title": "Oil Tanker Truck Parking Game", "category": "Action", "thumb": "https://img.gamemonetize.com/40i95l7qrakoextsh18h4bi0s3uq3vcy/512x384.jpg", "tags": ["2025 games", " Car", " monstertruck", " Parking", " Tank", " Truck"]}, {"slug": "brainrot-shooter", "title": "Brainrot Shooter", "category": "Shooting", "thumb": "https://img.gamemonetize.com/l8xgrcjf37q82eol0yfzm5bc78sexlw5/512x384.jpg", "tags": ["1 Player", " 3D", " Army", " attack", " Brainrot", " Brainrot Italian", " Brainrot sahuuur", " First Person Shooter", " fps", " Italian Brainrot", " Shooter", " Shooting", " Tralalero Tralala", " Tung Tung Tung Sahur"]}, {"slug": "us-coach-bus-simulator-game", "title": "US Coach Bus Simulator Game", "category": "Racing", "thumb": "https://img.gamemonetize.com/55cyt96a5u85bj0e3gfrd1qkn33bibos/512x384.jpg", "tags": ["2025 games", " bus", " Car", " Driving", " Simulation"]}, {"slug": "christmas-hexa-puzzle", "title": "Christmas Hexa Puzzle", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/r5yewhqbovg8et5g93jg55kmpsopj75a/512x384.jpg", "tags": ["Christmas", " Jigsaw", " Puzzle", " Skill", " Winter"]}, {"slug": "christmas-puzzle-with-santa", "title": "Christmas Puzzle With Santa", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/s80ixkrfmqkfbbm9wpgfhusidlad6j9o/512x384.jpg", "tags": ["Block", " Christmas", " Hypercasual", " Jigsaw", " Kids", " Puzzle", " Santa", " Santa Claus", " Winter"]}, {"slug": "juice-machine", "title": "Juice Machine", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/5ce4gmwhbhjzvogzq0ncr7tk22cd6456/512x384.jpg", "tags": ["Casual", " Fruits", " idle", " Point And Click"]}, {"slug": "neon-hockey-2", "title": "Neon Hockey 2", "category": "Sports", "thumb": "https://img.gamemonetize.com/gswoqzyqz7pbsqvzv8lvjbmspmsxnunp/512x384.jpg", "tags": ["1 Player", " 2 Player", " 2 Player Games", " 2025 games", " Click", " Color", " endless", " hockey", " Physics", " Soccer"]}, {"slug": "parking-jam-2025", "title": "Parking Jam 2025", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/95snwzd0xk6s5gro5jhlh0wrx7ez7gzr/512x384.jpg", "tags": ["1 Player", " 2025 games", " Car", " carparking", " Casual", " Parking", " Puzzle"]}, {"slug": "street-war", "title": "Street War", "category": "Boys", "thumb": "https://img.gamemonetize.com/6v1ijm03umzkj73s57p6cjag80axbwum/512x384.jpg", "tags": ["1 Player", " Boy", " Fight", " Skill", " Street Fighting"]}, {"slug": "runaway-fish-runner-game", "title": "Runaway Fish Runner Game", "category": "Adventure", "thumb": "https://img.gamemonetize.com/urdizd6vpkhaob5hvnjn90tnywq8ggvb/512x384.jpg", "tags": ["2025 games", " Fish", " running", " water"]}, {"slug": "drift-x-driving-car-game", "title": "Drift X Driving Car Game", "category": "Action", "thumb": "https://img.gamemonetize.com/1mf5gvj912ik2r7i0nkbfobb4ow3ax1t/512x384.jpg", "tags": ["Action", " Car", " drift", " Driving", " Parking", " Race", " Racing"]}, {"slug": "ants-io", "title": "Ants io", "category": "Action", "thumb": "https://img.gamemonetize.com/padkimfk900lo640e7v8dm70zuqacvpv/512x384.jpg", "tags": [".io", " .io Games", " 3D Games", " Action", " Arena", " Battle", " Skills", " survival"]}, {"slug": "piano-kids-music-and-songs", "title": "Piano Kids Music And Songs", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/k3qebemq0hr192ojfx686k0id4xqu8td/512x384.jpg", "tags": ["Educational", " Kids", " Music", " Simulation"]}, {"slug": "cyber-smash", "title": "Cyber Smash", "category": "Arcade", "thumb": "https://img.gamemonetize.com/ukcr870zdtvp729gljb1aqq10jwvy0v5/512x384.jpg", "tags": ["1 Player", " 2025 games", " Coloring", " HTML5", " unblockedgames76"]}, {"slug": "mini-games-fun-therapy", "title": "Mini Games Fun Therapy", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/0l63e7y0zqkpwjovwfwcsa0a88z6anbw/512x384.jpg", "tags": ["3D", " 3D Games", " amazing", " Arcade", " Baby Games", " Brain", " Brainrot", " Crazy"]}, {"slug": "float-boat", "title": "Float Boat", "category": "Racing", "thumb": "https://img.gamemonetize.com/89ffw0r03as995swxpcm5kazry2dot18/512x384.jpg", "tags": ["2D", " Adventure", " Boat", " crazygamesunblocked", " Escape", " free html5 games for your website"]}, {"slug": "celebrities-get-ready-for-christmas", "title": "Celebrities Get Ready For Christmas", "category": "Girls", "thumb": "https://img.gamemonetize.com/1ppyg0qwhtdvfhcvfobnhym4j123ytux/512x384.jpg", "tags": ["Celebrity", " Christmas", " Dress Up", " Fashion", " Girls"]}, {"slug": "trump-winter-adventure", "title": "Trump Winter Adventure", "category": "Arcade", "thumb": "https://img.gamemonetize.com/sbe7ep8jinyyd0vylm65mqq1j7aeorvg/512x384.jpg", "tags": ["Avoid", " Celebrity", " Christmas", " Collecting", " Fun", " Hypercasual", " jump", " Jumping", " run", " running", " Skill"]}, {"slug": "1945-air-force-space-shooter", "title": "1945 Air Force Space Shooter", "category": "Shooting", "thumb": "https://img.gamemonetize.com/wtdy3b6e8v505vj1ayn2c14kjkoy2k2e/512x384.jpg", "tags": ["airplane", " firefighters", " Shoot", " Space"]}, {"slug": "mr-dude-king-of-the-hill", "title": "Mr. Dude: King of the Hill", "category": "Action", "thumb": "https://img.gamemonetize.com/hp4wgaxp9qnpjbjr6lqx65h56fn9rl8h/512x384.jpg", "tags": ["3D", " 3D Games", " Action", " amazing", " Android", " Arcade", " Best Games", " Fun", " Funny", " Game", " iPhone", " Physics", " unity games", " Unity3D"]}, {"slug": "k-wedding-dream", "title": "K Wedding Dream", "category": "Girls", "thumb": "https://img.gamemonetize.com/hkph41kd0ddzg00y7zxgwh29sed97omn/512x384.jpg", "tags": ["Anime", " Dress Up", " Fashion", " Hair", " Makeover"]}, {"slug": "quad-bike-racing-game", "title": "Quad Bike Racing Game", "category": "Racing", "thumb": "https://img.gamemonetize.com/e7vwr30va5gq2lqvwa51grgufbtrejcn/512x384.jpg", "tags": ["Bike", " Driving", " Parking", " Race", " Racing"]}, {"slug": "career-run-ramp-game", "title": "Career Run Ramp Game", "category": "Racing", "thumb": "https://img.gamemonetize.com/n27xhtefi2jsta88usj0kdsphs1s4bui/512x384.jpg", "tags": ["2025 games", " 3D Games", " Game", " Puzzle", " Race", " run"]}, {"slug": "aimistry", "title": "Aimistry", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/l937mpytwf6eig6mkezalqs0bd814eri/512x384.jpg", "tags": ["Casual", " Educational", " Math", " Science"]}, {"slug": "nuts-bolts-screw-puzzle", "title": "Nuts Bolts Screw Puzzle", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/bmene1v8w9vlbu0fesbiym9wa9tvtqd8/512x384.jpg", "tags": ["1 Player", " 2025 games", " Ai Games", " Arcade", " Casual", " Hypercasual", " Puzzle", " puzzleblock"]}, {"slug": "winter-battle", "title": "Winter Battle", "category": "Arcade", "thumb": "https://img.gamemonetize.com/dncor1an3qhktld28weh6bqzd56iw14s/512x384.jpg", "tags": ["1 Player", " 2 Player", " 2 Player Games", " 2025 games", " 2D", " Adventure", " Arcade", " Christmas", " Santa Claus", " Winter"]}, {"slug": "duo-family-santa", "title": "Duo Family Santa", "category": "Arcade", "thumb": "https://img.gamemonetize.com/qn4ri5pm4ohq9mk391wpd6ka1fojxjk5/512x384.jpg", "tags": ["2 Player", " 2 Player Games", " 2D", " Adventure", " Arcade", " Christmas", " mineblock", " Minecraft", " Platform", " Santa", " Santa Claus", " Winter"]}, {"slug": "fruit-shotter", "title": "Fruit Shotter", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/rd1t71grt2bw50p7hilqyr122vwam8i9/512x384.jpg", "tags": ["Casual", " Click", " Fruit", " Shoot"]}, {"slug": "prime-ball-adventure-game", "title": "Prime Ball Adventure Game", "category": "Adventure", "thumb": "https://img.gamemonetize.com/uvzynzup76nhfiyyxph4kh1vjd7ixfy6/512x384.jpg", "tags": ["2025 games", " 3D", " Adventure", " Ball", " Casual"]}, {"slug": "fnaf-secret-of-the-mimic", "title": "Fnaf Secret Of The Mimic", "category": "Arcade", "thumb": "https://img.gamemonetize.com/slbqlihkv3nnqt3h91ddy10c8chi4ou0/512x384.jpg", "tags": ["Escape", " Horror", " Puzzle", " survival"]}, {"slug": "real-car-highway-racing-game", "title": "Real Car Highway Racing Game", "category": "Racing", "thumb": "https://img.gamemonetize.com/vgx4unz2tl0ybefewcwzhhypzxsoydnk/512x384.jpg", "tags": ["Adventure", " Best Games", " Car", " Race", " Racing", " Supercars"]}, {"slug": "antistress-relaxing-game", "title": "Antistress Relaxing Game", "category": "Arcade", "thumb": "https://img.gamemonetize.com/gnx894mbhc7271np4gvgo3w2efqcmwcp/512x384.jpg", "tags": ["1 Player", " 2025 games", " Adventure", " Arcade", " Relaxation"]}, {"slug": "hand-or-money", "title": "Hand Or Money", "category": "Clicker", "thumb": "https://img.gamemonetize.com/4sq7lw5if1rq337i7wkq4c9ww11ox940/512x384.jpg", "tags": ["Arcade", " Casual", " Click", " endless", " onetouch", " Timing"]}, {"slug": "word-search-2025", "title": "Word Search 2025", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/ppnf5uy8xk2zjtqzqbrkvtc0yuitwp5o/512x384.jpg", "tags": ["Puzzle", " Word"]}, {"slug": "an-origami-dolphin", "title": "an origami dolphin", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/s7002s0hrcmu05ctum972pkfe5eli68b/512x384.jpg", "tags": ["1 Player", " Arcade", " Hypercasual"]}, {"slug": "fruit-block-tetra-puzzle", "title": "Fruit Block Tetra Puzzle", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/j6megw9uguvx0ar4mom5cl0137zjo5d9/512x384.jpg", "tags": ["Block", " Collecting", " Fruit", " Puzzle", " Skill", " Tetris"]}, {"slug": "flappy-blitz-intercept", "title": "Flappy Blitz: Intercept", "category": "Arcade", "thumb": "https://img.gamemonetize.com/t4oj8lz7bkon6p6evtftnahw8mlt4wj2/512x384.jpg", "tags": ["1 Player", " 2025 games", " Action", " Arcade", " flappybird", " Flight", " unblockedgames76"]}, {"slug": "dead-survival-zombie-shooter", "title": "Dead Survival: Zombie Shooter", "category": "Action", "thumb": "https://img.gamemonetize.com/dyxwy4707q834y994kunt3e4ea94e12m/512x384.jpg", "tags": ["Action", " Adventure", " Shooting", " survival", " Zombie"]}, {"slug": "go-golf", "title": "Go Golf", "category": "Sports", "thumb": "https://img.gamemonetize.com/vyoai08811vqppdfilocq5k1f7emjsxg/512x384.jpg", "tags": ["Ball", " Casual", " Click", " Golf", " Puzzle"]}, {"slug": "makeover-run-3d", "title": "Makeover Run 3D", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/93gho8zm44tyfplow05psa1w59wtima7/512x384.jpg", "tags": ["3D", " Casual", " Dress Up", " Logic", " running", " slider"]}, {"slug": "stair-rush", "title": "Stair Rush", "category": "Stickman", "thumb": "https://img.gamemonetize.com/qdz9rleg7bpgb74ho1pzumfof61g4kta/512x384.jpg", "tags": ["Collection", " Hypercasual", " run", " running"]}, {"slug": "jumping-birds", "title": "Jumping Birds", "category": "Arcade", "thumb": "https://img.gamemonetize.com/knkznkotvxga9vqrltcjq25nt10vejzy/512x384.jpg", "tags": ["Cartoon", " jump", " Jumping"]}, {"slug": "shiny-dodge", "title": "Shiny Dodge", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/6wrigosarx8psz95dcfcrcsaus91jgk5/512x384.jpg", "tags": ["1 Player", " Arcade", " Casual", " Collection", " Escape"]}, {"slug": "counterflow", "title": "COUNTERFLOW", "category": "Racing", "thumb": "https://img.gamemonetize.com/5qvdrkrue8qnbn4gstx4xygxbio0ul6g/512x384.jpg", "tags": ["1 Player", " Avoid", " Car", " Driving"]}, {"slug": "ole-bunny", "title": "Ole Bunny", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/6uelofb3wuyay5oy6qkspegpnngxu0m4/512x384.jpg", "tags": ["2D", " amazing", " Animal", " Arcade", " Arena", " Best", " Best Games", " Cartoon", " Cute", " Hypercasual", " Rabbit", " run", " touch", " unity games"]}, {"slug": "dots-and-boxes-2", "title": "Dots and Boxes 2", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/njg32276zi9zg95bn3uc185d107hraix/512x384.jpg", "tags": ["2 Player Games", " 2025 games", " arrow", " Board", " HTML5"]}, {"slug": "doodle-jump-4", "title": "Doodle Jump 4", "category": "Arcade", "thumb": "https://img.gamemonetize.com/ufndae85yssn1i6ddmyxsvluxg590wvh/512x384.jpg", "tags": [".io", " .io Games", " 1 Player", " 2025 games", " Platform"]}, {"slug": "obby-99-nights-escape-1-speed", "title": " Obby: 99 Nights Escape +1 Speed", "category": "Arcade", "thumb": "https://img.gamemonetize.com/k1eahl1b9wxc6vqzxloqtvfzh5ai9csw/512x384.jpg", "tags": ["Animal", " Anime", " Arcade", " Casual", " egg", " eggames", " eggs", " Horror", " Kids", " Minecraft", " OnlyUp", " roblox", " Sport", " Timing"]}, {"slug": "harvest-glam", "title": "Harvest Glam", "category": "Girls", "thumb": "https://img.gamemonetize.com/dzrrj6ge0x1m20bc5bo0iqx4g1pklmsr/512x384.jpg", "tags": ["1 Player", " beauty", " Dress Up", " Fashion", " Girl", " Makeover"]}, {"slug": "car-racing-3d-extreme-dodge", "title": "Car Racing 3D: Extreme Dodge", "category": "Racing", "thumb": "https://img.gamemonetize.com/jpvsnofjw5cqhov1a2sjeu3521tn1tc2/512x384.jpg", "tags": ["3D", " Arcade", " Avoid", " Car", " Casual", " Driving", " Racing"]}, {"slug": "pipe-connect-puzzle-game", "title": "Pipe Connect Puzzle Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/b6inwt2c5d2hkk39omcv6e7e1m4he3y9/512x384.jpg", "tags": ["Casual", " Hypercasual", " Puzzle", " Strategy"]}, {"slug": "marshmallow-rush", "title": "Marshmallow Rush", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/qo6b7wd58bvy8is0umvi9ymripyxbmk3/512x384.jpg", "tags": ["3D", " Casual", " Clicker", " onetouch", " run", " Timing"]}, {"slug": "whack-a-mole-pixel-version", "title": "Whack a Mole   Pixel Version", "category": "Arcade", "thumb": "https://img.gamemonetize.com/xwfmok1iu5miopfeyqwzpt4flna2na6d/512x384.jpg", "tags": ["1 Player", " 2025 games", " 2D", " Arcade", " Pixel"]}, {"slug": "mini-asmr-relaxing-games", "title": "Mini ASMR Relaxing Games", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/5blz73jojw0zw9fgoy0dkvfsgv4xo862/512x384.jpg", "tags": ["2025 games", " 2D", " Adventure", " Arcade", " Puzzle", " Relaxation"]}, {"slug": "shape-puzzle", "title": "Shape Puzzle", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/dpbl07ksovtacdqlan1u5fp52gf43hia/512x384.jpg", "tags": ["1 Player", " Casual", " Click", " Puzzle"]}, {"slug": "fashionista-christmas-eve-party", "title": "Fashionista Christmas Eve Party", "category": "Girls", "thumb": "https://img.gamemonetize.com/5atjh0rucpsr1fsh0pkgzkj15r4xjkia/512x384.jpg", "tags": ["Christmas", " Dress Up", " Fashion", " Holiday", " Winter"]}, {"slug": "carrom-pro", "title": "carrom pro", "category": "Multiplayer", "thumb": "https://img.gamemonetize.com/ts6iu4xqkctvpkau5yk4hwdkr3nwbsn7/512x384.jpg", "tags": ["2 Player", " Board", " Multiplayer"]}, {"slug": "tower-breaker", "title": "Tower Breaker", "category": "Shooting", "thumb": "https://img.gamemonetize.com/vzlf957tf696fqliepaa9gkcgd2omtx9/512x384.jpg", "tags": ["crash", " destroy", " Mouse", " Simulation"]}, {"slug": "flower-fairy-adventure-story", "title": "Flower Fairy Adventure Story", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/5ou6u5a1fbiqfwzd3dnraxbcwg7d28sf/512x384.jpg", "tags": ["Dress Up", " Girls", " Jigsaw", " Relaxation"]}, {"slug": "fall-aesthetics", "title": "Fall Aesthetics", "category": "Girls", "thumb": "https://img.gamemonetize.com/w2plop8mnxgcdps57l4ks5yx9lzzkuzv/512x384.jpg", "tags": ["1 Player", " Dress Up", " Fashion", " Girl", " Princess"]}, {"slug": "monster-escape-logic-puzzle-adventure", "title": "Monster Escape: Logic Puzzle Adventure", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/iswcg23g2usoz6y1uj4kjb92um44r24i/512x384.jpg", "tags": [".io Games", " 1 Player", " Adventure", " Arcade"]}, {"slug": "jewelry-match-puzzle-game", "title": "Jewelry Match Puzzle Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/spacg9g3ocw5proj2m7p2bxe8fmet3dy/512x384.jpg", "tags": ["Arcade", " Casual", " Hypercasual", " Puzzle", " Strategy"]}, {"slug": "mini-pocket-game-2025", "title": "Mini Pocket Game 2025", "category": "Arcade", "thumb": "https://img.gamemonetize.com/affiobu9gimfnfg27qqj1hiikr41zmdl/512x384.jpg", "tags": ["2025 games", " 2D", " Adventure", " Arcade", " Best Games", " Brainrot", " Color"]}, {"slug": "push-gold", "title": "Push Gold", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/dv7mvugfv11ml7sih07edfvus2fziyfk/512x384.jpg", "tags": ["1 Player", " Block", " Brain", " Logic"]}, {"slug": "easy-coloring-labubu-time", "title": "Easy Coloring Labubu Time", "category": "Girls", "thumb": "https://img.gamemonetize.com/ssspxwzt95e93vzbhabrl3rbomuzzyc5/512x384.jpg", "tags": ["Arcade", " Coloring", " Educational", " Fun", " Hypercasual", " Kids", " Labubu", " School"]}, {"slug": "neon-ping-pong", "title": "Neon Ping Pong", "category": "Sports", "thumb": "https://img.gamemonetize.com/r4v95rc6m6gypa5pgwwdune2jngh6i4p/512x384.jpg", "tags": ["2 Player", " 2 Player Games", " 2025 games", " Action", " Sports"]}, {"slug": "cosmic-defender", "title": "Cosmic Defender", "category": "Shooting", "thumb": "https://img.gamemonetize.com/hpps4rzujsi2jzxw7thbkypm3sb4mq0q/512x384.jpg", "tags": ["1 Player", " 2025 games", " Action", " Fight", " Retro", " Science", " Shooter"]}, {"slug": "monster-egg", "title": "Monster Egg", "category": "Arcade", "thumb": "https://img.gamemonetize.com/a6mlyusljrtcoyhetis4m6u4rxbdymda/512x384.jpg", "tags": ["Action", " eggs", " Monster", " running"]}, {"slug": "shark-boy", "title": "Shark Boy", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/wsyqf99n87edjqqnatiyhiqb8qv5aaim/512x384.jpg", "tags": ["Brain", " Casual", " Click", " Logic"]}, {"slug": "monster-boom-boom", "title": "Monster Boom Boom", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/762jwzjxrf7he4af39rywycw6xpzib4d/512x384.jpg", "tags": ["Alien", " Brain", " Click", " Monster", " Puzzle"]}, {"slug": "red-up-survival-offline-game", "title": "Red Up Survival Offline Game", "category": "Adventure", "thumb": "https://img.gamemonetize.com/uvzrxu8peda71uin0gxeqdinrly6kwob/512x384.jpg", "tags": ["2025 games", " 3D", " Action", " Adventure"]}, {"slug": "mini-no-wifi-games-2024", "title": "Mini No Wifi Games 2024", "category": "Arcade", "thumb": "https://img.gamemonetize.com/0bxsnepcupr0twu3umvmdxnso7kzwwr3/512x384.jpg", "tags": ["2025 games", " 2D", " 3D Games", " Adventure", " Baby Games", " Casual", " free games for your site", " free games for your website", " Relaxation"]}, {"slug": "cozy-pizzeria", "title": "Cozy Pizzeria", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/la3akmhdsim4g3vztf22xdk3recbrkec/512x384.jpg", "tags": ["3D", " Casual", " Management", " pizza", " Restaurant", " Simulation", " Strategy"]}, {"slug": "found-it-hidden-object-game", "title": "Found It! Hidden Object Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/rpque3q0zlm0z2jiecj7wmokvr4wzai8/512x384.jpg", "tags": ["Arcade", " Casual", " Hypercasual", " Puzzle", " Strategy"]}, {"slug": "number-merger", "title": "number merger", "category": "Clicker", "thumb": "https://img.gamemonetize.com/ylbicwd30vva0awbilt3x3ryxjkg5v59/512x384.jpg", "tags": ["1 Player", " 2D", " Click", " Clicker", " free html5 games for your website", " HTML", " html games for your website", " HTML5", " html5 games", " html5 games for your site", " idle"]}, {"slug": "draw-dot-picture-game", "title": "Draw Dot Picture Game", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/nj974v2hmarol6ij7nr8op8qt1cq5x33/512x384.jpg", "tags": ["2025 games", " Casual", " Draw", " Drawing", " Hypercasual"]}, {"slug": "snake-battle", "title": "Snake Battle", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/69an8dj2qbecd9ek1dca4e9rmq6g3d6e/512x384.jpg", "tags": ["1 Player", " Boy", " Casual"]}, {"slug": "food-game-grill-sort", "title": "Food Game Grill Sort", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/x18szni3pe1a4863gcud2kqig4rhrgfg/512x384.jpg", "tags": ["Food", " Matching", " Simulation", " sort"]}, {"slug": "real-grand-truck-simulator-game", "title": "Real Grand Truck Simulator Game", "category": "Adventure", "thumb": "https://img.gamemonetize.com/li3mjjfsponfzv0lrbdraonb6qqf9g4i/512x384.jpg", "tags": ["Adventure", " Parking", " Simulation", " Truck", " trucks"]}, {"slug": "highway-car-racing-game", "title": "Highway Car Racing Game", "category": "Racing", "thumb": "https://img.gamemonetize.com/qbqv80h4e5r9avum225uy3hxqdxu5793/512x384.jpg", "tags": ["Adventure", " Car", " Cars", " Driving", " Race", " Racing", " Road"]}, {"slug": "city-car-pick-and-drop-game", "title": "City Car Pick And Drop Game", "category": "Adventure", "thumb": "https://img.gamemonetize.com/874bx7nponra853hk8751z6ui4ssa07q/512x384.jpg", "tags": ["3D", " Action", " Adventure", " building", " Car", " Cars", " city"]}, {"slug": "fruit-catchere", "title": "Fruit Catchere", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/18vy36scythopw8n2oibpaltoj3wvjwp/512x384.jpg", "tags": ["1 Player", " 2025 games", " 2D", " Baby Games"]}, {"slug": "neon-pulse-arena", "title": "Neon Pulse Arena", "category": "Clicker", "thumb": "https://img.gamemonetize.com/54o8e31n5pikjwkpbotk09ffg09eluy1/512x384.jpg", "tags": ["1 Player", " 2025 games", " Arena", " survival"]}, {"slug": "labubu-find-the-differences", "title": "Labubu Find the Differences", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/o1770rkhfl4qeja9s68btv7flae5ooe7/512x384.jpg", "tags": ["Boy", " Brain", " Difference", " Fun", " Girl", " Hypercasual", " Kids", " Labubu", " Logic", " Skill"]}, {"slug": "easy-picture-colouring-game", "title": "Easy Picture Colouring Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/85n63q0psxqw26ojixem9459svfp46ld/512x384.jpg", "tags": ["Casual", " Color", " Coloring", " Hypercasual", " Puzzle", " Strategy"]}, {"slug": "asmr-mini-puzzle-games-2024", "title": "ASMR Mini Puzzle Games 2024", "category": "Arcade", "thumb": "https://img.gamemonetize.com/i376ctj4firbz34cju00yyepssrvxco9/512x384.jpg", "tags": ["2025 games", " Adventure", " Arcade", " Best Games", " Fun", " Relaxation", " Strategy"]}, {"slug": "emotional-support-duck", "title": "Emotional Support Duck", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/8j1yrpb0xpmufhojds2rloowa334q7ts/512x384.jpg", "tags": [".io Games", " 1 Player", " Animal", " Battle"]}, {"slug": "dinosaur-games-for-toddlers", "title": "Dinosaur Games For Toddlers", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/okteqriu3kq21tj9s55swx4u4o4zg732/512x384.jpg", "tags": ["Collection", " Dinosaur", " eggs", " Funny"]}, {"slug": "frank-in-geometry-maps", "title": "Frank In Geometry Maps", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/8ansls0hjssmsr3rk8ry4clfmwbqq8qn/512x384.jpg", "tags": ["1 Player", " Arcade", " Avoid", " Geometry", " jump"]}, {"slug": "timely-delivery", "title": "Timely Delivery", "category": "Arcade", "thumb": "https://img.gamemonetize.com/cfr12fabbug90fu9aqqqpatan4adauwy/512x384.jpg", "tags": ["Avoid", " Casual", " Obstacle", " onetouch", " running", " Traffic"]}, {"slug": "monster-truck-zombiesnbspgame", "title": "Monster Truck Zombies&nbsp;Game", "category": "", "thumb": "https://img.gamemonetize.com/vx9c332rtjn79s9qjidasv804co4lbwd/512x384.jpg", "tags": ["2 Player Games", " Adventure", " Monster", " Race", " Zombie"]}, {"slug": "go-mafalda", "title": "Go Mafalda!", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/1hsabrp99x1yy9f9vs267k2gt0fvlv0i/512x384.jpg", "tags": ["1 Player", " 2D", " Cute", " endless", " Highscore", " jump", " Pixel", " run"]}, {"slug": "3d-kid-sliding-puzzle", "title": "3D Kid Sliding Puzzle", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/r9j8tc1hmo3v4q59qbap0e7jhv3m9smc/512x384.jpg", "tags": ["1 Player", " Animal", " Fun", " Funny", " Kids", " Skill", " sliding"]}, {"slug": "power-boat-racing-game", "title": "Power Boat Racing Game", "category": "Racing", "thumb": "https://img.gamemonetize.com/m7neml8mldms64runb0a6bhaaro21hhh/512x384.jpg", "tags": ["Adventure", " Boat", " Race", " Racing", " water"]}, {"slug": "solitaire-card-sorting", "title": "Solitaire: Card Sorting", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/8g0f47j2ywc7mtqftraxeu45z13qw3hg/512x384.jpg", "tags": ["Card", " Casual", " Puzzle", " Solitaire"]}, {"slug": "jigsolitaire-deluxe", "title": "Jigsolitaire Deluxe", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/23sgyhikibl5jvylyk2uub6wksiq8tfo/512x384.jpg", "tags": ["1 Player", " Card", " Relaxation", " Solitaire"]}, {"slug": "hen-bubble-go-up-game", "title": "Hen Bubble Go Up Game", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/zlzf1kffk3viwxaxuw6uhecozdcb85u2/512x384.jpg", "tags": ["2025 games", " Adventure", " Arcade", " Bubble"]}, {"slug": "aqualogics-puzzles-game", "title": "Aqualogics Puzzles Game", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/myfre67i1rsz9gav2l0in0rfqct6mrjy/512x384.jpg", "tags": ["Brain", " Logical", " Puzzle"]}, {"slug": "men-vs-gorillas", "title": "Men Vs Gorillas", "category": "Action", "thumb": "https://img.gamemonetize.com/g04edxyis63ewbo539y721f4qpa3n1nt/512x384.jpg", "tags": ["3D", " Action", " Fight", " Strategy"]}, {"slug": "phone-case-diy-kpop-fans", "title": "Phone Case Diy Kpop Fans", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/sk9x91sn2cabxx0s7wksvwqsa923iccw/512x384.jpg", "tags": ["Cool", " Design", " Fashion", " iPhone"]}, {"slug": "spider-match", "title": "Spider Match", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/sjghavwkh9bpg0i06sgsnve9uxomk6x2/512x384.jpg", "tags": ["free html5 games for your website", " Kiz 10", " Match 3", " Puzzle", " Spiderman", " Superhero"]}, {"slug": "gang-blast", "title": "Gang Blast", "category": "Shooting", "thumb": "https://img.gamemonetize.com/48v0gscii4bf868ymoyqf6oyo0tsd2ou/512x384.jpg", "tags": ["3D", " Dinosaur", " Shooter", " Stealth", " weapons"]}, {"slug": "legend-dream-football-game", "title": "Legend Dream Football Game", "category": "Sports", "thumb": "https://img.gamemonetize.com/bom17v0dxydcmce4incq85b80hxccsqx/512x384.jpg", "tags": ["2025 games", " Action", " Ball", " Food", " Sports"]}, {"slug": "toy-rumble-3d", "title": "Toy Rumble 3D", "category": "Arcade", "thumb": "https://img.gamemonetize.com/0a9w8rhj93oivc5ax2ag9khog6k9klar/512x384.jpg", "tags": ["Action", " Racing", " running", " Strategy"]}, {"slug": "obby-universe-mini-games-online", "title": "Obby Universe: Mini Games Online", "category": "Arcade", "thumb": "https://img.gamemonetize.com/rigii51flinmiis7djlyliiwf3ggc9r1/512x384.jpg", "tags": ["3D Games", " Adventure", " Arcade", " Baby Games", " Best", " Best Games", " Brainrot", " Cartoon", " Casual", " House", " Kids", " Minecraft", " roblox", " World"]}, {"slug": "puzzle-legends-game-of-heroes", "title": "Puzzle Legends: Game of Heroes", "category": "Puzzle", "thumb": "https://img.gamemonetize.com/m8n8ghtemiogm3qr1wu4x7udws58b84n/512x384.jpg", "tags": ["Match 3", " Match-3", " Match3"]}, {"slug": "asmr-relaxing-puzzle-games", "title": "ASMR Relaxing Puzzle Games", "category": "Arcade", "thumb": "https://img.gamemonetize.com/x8n96yantm6dnnqq98nud7qlvhu180dz/512x384.jpg", "tags": ["2025 games", " 2D", " Adventure", " Arcade", " Best Games", " Brainrot"]}, {"slug": "health-protection", "title": "Health Protection", "category": "Hypercasual", "thumb": "https://img.gamemonetize.com/j5ksbudef7eir5mwrj6mdric2lq1h7c7/512x384.jpg", "tags": ["1 Player", " Casual", " Fight", " Fighting"]}];
+</script>
+
+<footer>
+<div class="container">
+<p>© 2024 Free Online Games. Play free browser games instantly - no downloads required!</p>
+<div class="footer-links">
+<a href="./privacy.html">Privacy Policy</a>
+<a href="./terms.html">Terms of Service</a>
+<a href="./contact.html">Contact</a>
+<a href="./cookies.html">Cookie Policy</a>
+</div>
+</div>
+</footer>
+<div class="cookie-popup">
+<p>🍪 We use cookies to enhance your gaming experience and analyze traffic. By clicking "Accept", you consent to our use of cookies.</p>
+<div class="btns">
+<button class="accept" onclick="acceptCookies()">Accept</button>
+<button class="decline" onclick="declineCookies()">Decline</button>
+</div>
+</div>
+<script>
+// Recently Played
+function getRecentlyPlayed() {
+    return JSON.parse(localStorage.getItem('recentlyPlayed') || '[]');
+}
+function addRecentlyPlayed(game) {
+    let recent = getRecentlyPlayed().filter(g => g.slug !== game.slug);
+    recent.unshift(game);
+    localStorage.setItem('recentlyPlayed', JSON.stringify(recent.slice(0, 10)));
+}
+
+// Favorites
+function getFavorites() {
+    return JSON.parse(localStorage.getItem('favorites') || '[]');
+}
+function toggleFavorite(game) {
+    let favs = getFavorites();
+    const idx = favs.findIndex(g => g.slug === game.slug);
+    if (idx > -1) {
+        favs.splice(idx, 1);
+    } else {
+        favs.push(game);
+    }
+    localStorage.setItem('favorites', JSON.stringify(favs));
+    return idx === -1;
+}
+function isFavorite(slug) {
+    return getFavorites().some(g => g.slug === slug);
+}
+
+// Share
+function shareGame(platform, title, url) {
+    const text = 'Play ' + title + ' for free!';
+    const urls = {
+        twitter: 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url),
+        facebook: 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url),
+        whatsapp: 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url)
+    };
+    if (platform === 'copy') {
+        navigator.clipboard.writeText(url);
+        alert('Link copied!');
+    } else {
+        window.open(urls[platform], '_blank', 'width=600,height=400');
+    }
+}
+
+// Cookie Consent
+if (!localStorage.getItem('cookieConsent')) {
+    document.addEventListener('DOMContentLoaded', function() {
+        const popup = document.querySelector('.cookie-popup');
+        if (popup) popup.classList.add('show');
+    });
+}
+function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    document.querySelector('.cookie-popup').classList.remove('show');
+}
+function declineCookies() {
+    localStorage.setItem('cookieConsent', 'declined');
+    document.querySelector('.cookie-popup').classList.remove('show');
+}
+
+// Search (homepage)
+function initSearch() {
+    const input = document.getElementById('search-input');
+    const results = document.getElementById('search-results');
+    const grid = document.getElementById('search-grid');
+    if (!input || !window.GAMES_INDEX) return;
+    
+    input.addEventListener('input', function() {
+        const q = this.value.toLowerCase().trim();
+        if (q.length < 2) {
+            results.classList.remove('active');
+            return;
+        }
+        const matches = window.GAMES_INDEX.filter(g => 
+            g.title.toLowerCase().includes(q) || 
+            g.category.toLowerCase().includes(q) ||
+            (g.tags && g.tags.some(t => t.toLowerCase().includes(q)))
+        ).slice(0, 20);
+        
+        if (matches.length) {
+            grid.innerHTML = matches.map(g => `
+                <a href="games/${g.slug}.html" class="card">
+                    <div class="card-img"><img src="${g.thumb}" alt="${g.title}" loading="lazy"></div>
+                    <div class="card-info"><h3>${g.title}</h3><p class="cat">${g.category}</p></div>
+                </a>
+            `).join('');
+            results.classList.add('active');
+        } else {
+            results.classList.remove('active');
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded', initSearch);
+</script>
+</body>
+</html>

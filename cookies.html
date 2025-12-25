@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cookie Policy - Free Online Games</title>
+    <meta name="description"
+        content="Cookie Policy for Free Online Games. Learn about how we use cookies on our website.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://medoxisto.github.io/cookies.html">
+    <style>
+        :root {
+            --bg: #0d0d1a;
+            --bg2: #141428;
+            --card: #1a1a35;
+            --accent: #8b5cf6;
+            --accent2: #ec4899;
+            --text: #f1f5f9;
+            --muted: #94a3b8;
+            --border: rgba(139, 92, 246, .15);
+            --radius: 14px
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 16px
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none
+        }
+
+        a:hover {
+            color: var(--accent2)
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        header {
+            background: var(--bg2);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            gap: 16px
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+
+        main {
+            padding: 48px 0
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+            color: var(--text)
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 16px
+        }
+
+        ul {
+            color: var(--muted);
+            margin: 16px 0 16px 24px
+        }
+
+        li {
+            margin-bottom: 8px
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid var(--border);
+            color: var(--muted)
+        }
+
+        th {
+            background: var(--card);
+            color: var(--text);
+            font-weight: 600
+        }
+
+        .back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            font-weight: 600
+        }
+
+        .back:hover {
+            background: var(--accent);
+            border-color: var(--accent)
+        }
+
+        footer {
+            background: var(--bg2);
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            text-align: center;
+            margin-top: 48px
+        }
+
+        footer p {
+            color: var(--muted);
+            font-size: 13px
+        }
+    
+/* ========== MOBILE OPTIMIZATION ========== */
+@media (max-width: 768px) {
+    /* Compact Header */
+    header { padding: 8px 0; }
+    .header-inner { gap: 10px; }
+    .logo { font-size: 18px; gap: 6px; }
+    .logo span { font-size: 16px; }
+    nav { display: none; }
+    .search { display: none; }
+    
+    /* Compact Container */
+    .container { padding: 0 12px; }
+    
+    /* Hero Section */
+    .hero { padding: 20px 12px; }
+    .hero h1 { font-size: 22px; margin-bottom: 8px; }
+    .hero p { font-size: 14px; margin-bottom: 16px; display: none; }
+    #search-input { padding: 12px 16px; font-size: 14px; margin-bottom: 16px; }
+    
+    /* Section Headers */
+    .section { margin: 20px 0; }
+    .section-header { margin-bottom: 12px; }
+    .section-title { font-size: 16px; }
+    
+    /* 2-Column Game Grid */
+    .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+    
+    /* Compact Game Cards */
+    .card { border-radius: 8px; }
+    .card-img { aspect-ratio: 16/10; border-radius: 8px 8px 0 0; }
+    .card-info { padding: 8px 10px; }
+    .card-info h3 { font-size: 12px; margin-bottom: 2px; }
+    .card-info .cat { font-size: 10px; }
+    .badge { padding: 3px 6px; font-size: 9px; top: 6px; left: 6px; }
+    .fav-btn { width: 28px; height: 28px; font-size: 14px; top: 6px; right: 6px; }
+    
+    /* Category Grid */
+    .cats-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 8px;
+    }
+    .cat-card { padding: 12px 8px; }
+    .cat-card h3 { font-size: 12px; }
+    .cat-card span { font-size: 10px; }
+    
+    /* Footer */
+    footer { padding: 24px 0; margin-top: 32px; }
+    footer p { font-size: 11px; }
+    .footer-links { gap: 12px; }
+    .footer-links a { font-size: 11px; }
+    
+    /* Cookie popup */
+    .cookie-popup { bottom: 10px; left: 10px; right: 10px; padding: 14px; }
+    .cookie-popup p { font-size: 12px; margin-bottom: 12px; }
+    .cookie-popup button { padding: 8px 14px; font-size: 12px; }
+}
+
+/* ========== GAME PAGE MOBILE ========== */
+@media (max-width: 768px) {
+    /* Layout */
+    .game-layout { display: flex; flex-direction: column; gap: 16px; }
+    .game-main { order: 1 !important; }
+    .game-sidebar { order: 99 !important; }
+    
+    /* Hide breadcrumbs on mobile */
+    .breadcrumbs { display: none; }
+    
+    /* Game Header */
+    .game-box { border-radius: 8px; }
+    .game-header { padding: 12px; }
+    .game-header h1 { font-size: 18px; margin-bottom: 6px; }
+    .game-meta { font-size: 12px; gap: 8px; }
+    .game-meta span { padding: 4px 0; }
+    
+    /* Game Frame - Full width, good height */
+    .game-frame { 
+        aspect-ratio: 16/10; 
+        min-height: 220px;
+        border-radius: 0;
+    }
+    
+    /* Game Actions - Horizontal scroll */
+    .game-actions { 
+        padding: 10px; 
+        gap: 8px; 
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .game-actions button { 
+        padding: 10px 14px; 
+        font-size: 13px; 
+        min-width: auto;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    /* Description */
+    .game-desc { padding: 14px; font-size: 13px; line-height: 1.6; }
+    .game-desc h2 { font-size: 15px; margin-bottom: 8px; }
+    
+    /* Sidebar Info Boxes */
+    .game-sidebar { gap: 12px; }
+    .info-box { padding: 14px; border-radius: 8px; }
+    .info-box h3 { font-size: 14px; margin-bottom: 10px; }
+    .info-item { padding: 8px 0; font-size: 12px; }
+    .info-label { color: var(--muted); }
+    
+    /* Tags */
+    .tags { gap: 6px; }
+    .tag { padding: 4px 10px; font-size: 11px; }
+    
+    /* How to Play */
+    .how-to-play { padding: 12px; }
+    .how-to-play p { font-size: 12px; }
+    
+    /* Share Buttons */
+    .share-btns { gap: 8px; }
+    .share-btn { width: 36px; height: 36px; font-size: 14px; }
+}
+
+/* Extra small phones */
+@media (max-width: 380px) {
+    .grid { gap: 8px; }
+    .card-info { padding: 6px 8px; }
+    .card-info h3 { font-size: 11px; }
+    .game-header h1 { font-size: 16px; }
+    .game-actions button { padding: 8px 12px; font-size: 12px; }
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="./" class="logo">🎮 <span>Free Games</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <a href="./" class="back">← Back to Games</a>
+            <h1>Cookie Policy</h1>
+            <p><strong>Last updated:</strong> December 24, 2024</p>
+
+            <h2>What Are Cookies?</h2>
+            <p>Cookies are small text files stored on your device when you visit websites. They help websites remember
+                your preferences and improve your browsing experience.</p>
+
+            <h2>How We Use Cookies</h2>
+            <p>We use cookies for the following purposes:</p>
+
+            <table>
+                <tr>
+                    <th>Cookie Type</th>
+                    <th>Purpose</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Essential</td>
+                    <td>Remember cookie consent</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>Functional</td>
+                    <td>Remember preferences</td>
+                    <td>30 days</td>
+                </tr>
+                <tr>
+                    <td>Analytics</td>
+                    <td>Understand site usage</td>
+                    <td>2 years</td>
+                </tr>
+            </table>
+
+            <h2>Types of Cookies We Use</h2>
+
+            <h3>Essential Cookies</h3>
+            <p>These cookies are necessary for our website to function properly. They enable core functionality like
+                remembering your cookie consent preferences.</p>
+
+            <h3>Analytics Cookies</h3>
+            <p>We may use analytics cookies to understand how visitors interact with our website. This helps us improve
+                our services. These cookies collect anonymous data.</p>
+
+            <h3>Third-Party Cookies</h3>
+            <p>Games embedded on our site may set their own cookies. These are controlled by the game providers and are
+                subject to their privacy policies.</p>
+
+            <h2>Managing Cookies</h2>
+            <p>You can control cookies through your browser settings:</p>
+            <ul>
+                <li><strong>Chrome:</strong> Settings → Privacy and Security → Cookies</li>
+                <li><strong>Firefox:</strong> Settings → Privacy & Security → Cookies</li>
+                <li><strong>Safari:</strong> Preferences → Privacy → Cookies</li>
+                <li><strong>Edge:</strong> Settings → Privacy → Cookies</li>
+            </ul>
+            <p>Note: Disabling cookies may affect website functionality.</p>
+
+            <h2>Updates to This Policy</h2>
+            <p>We may update this Cookie Policy periodically. Check back for the latest information.</p>
+
+            <h2>Contact</h2>
+            <p>Questions about our cookie usage? Contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:barichati0696@gmail.com">barichati0696@gmail.com</a></p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 Free Online Games. <a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a> · <a
+                    href="./contact.html">Contact</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
